@@ -8,7 +8,7 @@
 	<meta name="description" content="Xenon Boostrap Admin Panel" />
 	<meta name="author" content="" />
 
-	<title>Unifli - Missions</title>
+	<title>Unifli - Request Cad Line Work</title>
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
 	<link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
@@ -30,7 +30,7 @@
 
 
 </head>
-<body class="page-body" style="overflow-x:hidden;">
+<body class="page-body">
 
 	<div class="settings-pane">
 
@@ -192,13 +192,14 @@ Page admin
 				<ul id="main-menu" class="main-menu">
 					<!-- add class "multiple-expanded" to allow multiple submenus to open -->
 					<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+
 					<li class="active has">
 						<a href="missions.html">
 							<i class="linecons-star"></i>
 							<span class="title">Missions</span>
 						</a>
 					</li>
-					<li class="has">
+					<li class="active has">
 						<a href="request_cad_line_work.html">
 							<i class="linecons-star"></i>
 							<span class="title">Request Cad Line Work</span>
@@ -518,8 +519,8 @@ Page admin
 			<div class="page-title">
 
 				<div class="title-env">
-					<h1 class="title">Missions</h1></div>
-			
+					<h1 class="title">CAD Linework Application</h1></div>
+
 
 
 
@@ -531,39 +532,32 @@ Page admin
 
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<div button class="panel-btn btn-Turquoise" style="color:#00b19d;">+Create Mission</div>
 
 							<div class="panel-options">
 									<div class="breadcrumb-env">
-
-								<ol class="breadcrumb bc-1" >
-									<li class="dropdown">
-							<!--<a href="#" class="drop">From Date <b class="caret"></b></a>-->
-<input placeholder="From Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="fdate" onfocusout="(this.type='text')">
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-							</ul>
-									</li>
-
-				<!--<input type="date" placeholder="to date">-->
-
-<input placeholder="To Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="tdate" onfocusout="(this.type='text')">
-							<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">To Date <b class="caret"></b></a>-->
-
-
-
-			<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Status<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-							</ul>
-			</li>
-								</li>
-								</ol>
+										<ol class="breadcrumb bc-1" >
+											<li>
+												CAD Linework Revenue : ($2000)
+											</li>
+											<li class="dropdown">
+							<input placeholder="From Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="fdate" onfocusout="(this.type='text')">
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Action</a>
+										</li>
+									</ul>
+											</li>
+							<input placeholder="To Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="tdate" onfocusout="(this.type='text')">
+							<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Status<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Action</a>
+										</li>
+									</ul>
+							</li>
+										</li>
+										</ol>
 
 				</div>
 
@@ -571,7 +565,7 @@ Page admin
 						</div>
 
 						<div class="panel-body">
-							<div style="  overflow: scroll; overflow-y:hidden;">
+							<div style="  overflow: scroll;">
 
 								<table cellspacing="0" class="table table-small-font table-bordered table-striped">
 									<thead style="white-space:nowrap;">
