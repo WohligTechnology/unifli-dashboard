@@ -192,6 +192,12 @@ Page admin
 				<ul id="main-menu" class="main-menu">
 					<!-- add class "multiple-expanded" to allow multiple submenus to open -->
 					<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+					<li class=" has">
+						<a href="missions.html">
+							<i class="linecons-star"></i>
+							<span class="title">Mission</span>
+						</a>
+					</li>
 					<li class="active has">
 						<a href="missions.html">
 							<i class="linecons-star"></i>
@@ -541,23 +547,9 @@ Page admin
 									<div class="breadcrumb-env">
 			
 								<ol class="breadcrumb bc-1" >
-									<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">From Date <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-							</ul>
-									</li>
-			<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">To Date <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-							</ul>
-			</li>
-							
+									<input placeholder="From Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="fdate" onfocusout="(this.type='text')"> 
+			<input placeholder="To Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="tdate" onfocusout="(this.type='text')"> 
+							<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">To Date <b class="caret"></b></a>-->
 			<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Status<b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -574,154 +566,33 @@ Page admin
 							</div>
 						</div>
                         	
-						<div class="panel-body">
-							<div style="  overflow: scroll;">
-						
-								<table cellspacing="0" class="table table-small-font table-bordered table-striped">
-									<thead style="white-space:nowrap;">
-										<tr>
-											<th>Mission ID</th>
-											<th data-priority="1">CAD Linework</th>
-											<th data-priority="3">Uploaded</th>
-											<th data-priority="1">collected</th>
-											<th data-priority="3">Description</th>
-											<th data-priority="3">Status</th>
-											<th data-priority="6">Date of completion</th>
-                                            <th data-priority="6">Completed Apps</th>
-                                            <th data-priority="6">Shared Map</th>
-                                            <th data-priority="6">Sharing</th>
-										</tr>
-									</thead>
-									<tbody style="white-space:nowrap;">
-										<tr>
-											<th>M- 120</th>
-											<td>In Process</td>
-											<td>4/01/2016</td>
-											<td>_____</td>
-											<td>_____</td>
-											<td>In Process</td>
-											<td>________</td>
-                                            <td>Otho Mosaic</td>
-                                            	<td>_____</td>
-                                                	<td>_____</td>
-										</tr>		
-										<tr>
-											<th>M- 121</th>
-											<td>Request CAD Linework</td>
-											<td>5/02/2016</td>
-											<td>_____</td>
-											<td>_____</td>
-											<td>Ready</td>
-											<td>________</td>
-                                               <td>NDVI</td>
-                                               	<td>_____</td>
-                                                   	<td>_____</td>
-										</tr>		
-										<tr>
-											<th>M- 122</th>
-											<td>Completed</td>
-											<td>4/03/2016</td>
-											<td>_____</td>
-											<td>_____</td>
-											<td>Ready</td>
-											<td>________</td>
-                                               <td>DEM</td>
-                                               	<td>_____</td>
-                                                   	<td>_____</td>
-										</tr>		 
-										<tr>
-											<th>M- 123</th>
-											<td>Request CAD Linework</td>
-											<td>5/04/2016</td>
-											<td>_____</td>
-											<td>_____</td>
-											<td>Ready</td>
-											<td>________</td>
-                                               <td>Map Viewer</td>
-                                               	<td>_____</td>
-                                                   	<td>_____</td>
-										</tr>		
-										<tr>
-											<th>M- 124</th>
-											<td>Completed</td>
-											<td>8/05/2016 </td>
-											<td>_____</td>
-											<td>_____</td>
-											<td>Ready</td>
-											<td>________</td>
-                                               <td>Point Cloud</td>
-                                               	<td>_____</td>
-                                                   	<td>_____</td>
-										</tr>
-										<tr>
-											<th>M- 125</th>
-											<td>Completed</td>
-											<td>9/06/2016</td>
-											<td>_____</td>
-											<td>_____</td>
-											<td>In Process</td>
-											<td>________</td>
-                                               <td>Map Viewer</td>
-                                               	<td>_____</td>
-                                                   	<td>_____</td>
-										</tr>		
-										<tr>
-											<th>M- 126</th>
-											<td>In Q.C.</td>
-											<td>4/01/2016</td>
-											<td>_____</td>
-											<td>_____</td>
-											<td>In Process</td>
-											<td>________</td>
-                                               <td>Point Cloud</td>
-                                               	<td>_____</td>
-                                                   	<td>_____</td>
-										</tr>
-										<!-- Repeat -->
-										<tr>
-											<th>M- 127</th>
-											<td>In Process</td>
-											<td>4/01/2016</td>
-											<td>_____</td>
-											<td>_____</td>
-											<td>In Process</td>
-											<td>________</td>
-                                               <td><li class="dropdown" style="list-style-type:none;">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">DEM<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">ORTHOMOSAIC</a>
-								</li>
-                                <li>
-									<a href="#">DEM</a>
-								</li>
-                                <li>
-									<a href="#">NDVI</a>
-								</li>
-                                <li>
-									<a href="#">MAP VIEWER</a>
-								</li>
-                                <li>
-									<a href="#">POINT CLOUD</a>
-								</li>
-							</ul>
-			                    </li></td>
-                            	<td>_____</td>
-                                <td>_____</td>
-										</tr>		
+						<div class="panel-body text-center ">
+							<div class="card-login">
+							<div class="btn-group " >
+									<button type="button" class="btn btn-purple">Mission</button>
+									<button type="button" class="btn btn-purple dropdown-toggle" data-toggle="dropdown">
+										<span class="caret"></span>
+									</button>
+									
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="#">M-120</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">M-140</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">M-161</a>
+										</li>
+										<li class="divider"></li>
 										
-									</tbody>
-								</table>
-						</div>
-							<ul class="pagination">
-								<li><a href="#"><i class="fa-angle-left"></i></a></li>
-								<li><a href="#">1</a></li>
-								<li class="active"><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li class="disabled"><a href="#">4</a></li>
-								
-								<li><a href="#"><i class="fa-angle-right"></i></a></li>
-							</ul>
+										<li>
+											<a href="#">M-165</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 							
 							<script type="text/javascript">
