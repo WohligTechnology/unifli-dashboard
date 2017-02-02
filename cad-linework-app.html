@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Xenon Boostrap Admin Panel" />
     <meta name="author" content="" />
-    <title>Unifli - Invoicing / Receipts</title>
+    <title>Unifli - CAD Linework Application</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
@@ -156,14 +156,14 @@
                             <span class="title">Missions</span>
                         </a>
                     </li>
-                    <li class=" has">
+                    <li class="active has">
                         <a href="cad-linework-app.html">
                             <i class="fa-pencil"></i>
                             <span class="title">CAD Linework Application</span>
                         </a>
                     </li>
-                    <li class="active has">
-                        <a href="invoicing-receipts.html">
+                    <li class=" has">
+                        <a href="missions.html">
                             <i class="fa-file-text-o"></i>
                             <span class="title">Invoicing / Receipts</span>
                         </a>
@@ -417,7 +417,7 @@
             </nav>
             <div class="page-title">
                 <div class="title-env">
-                    <h1 class="title">Invoicing / Receipts</h1>
+                    <h1 class="title">CAD Linework Application</h1>
                 </div>
             </div>
             <!-- Responsive Table -->
@@ -457,91 +457,217 @@
                             </div>
                             <div style="  overflow: scroll;">
                                 <table cellspacing="0" class="table table-small-font table-bordered table-striped">
-                                    <!--<thead style="white-space:nowrap;">
-                                        <tr>
-                                            <th>Tickets ID</th>
-                                            <th data-priority="1">Ticket Details</th>
-                                            <th data-priority="3">Date of Receipt</th>
-                                            <th data-priority="1">Ticket Raised For</th>
-                                            <th data-priority="1">User ID</th>
-                                            <th data-priority="1">Tickets Status</th>
-                                            <th data-priority="1">Ticket Closing Date</th>
-                                        </tr>
-                                    </thead>-->
+                                    
                                     <thead style="white-space:nowrap;">
                                         <tr>
-                                            <th>Payment ID</th>
-                                            <th data-priority="1">Sold Items</th>
-                                            <th data-priority="3">Cost</th>
-                                            <th data-priority="1">Transaction Date</th>
-                                            <th data-priority="1">Payment Status</th>
-                                            <th data-priority="1">Payment Mode</th>
-                                            <th data-priority="1">Payment Date</th>
-                                            <th data-priority="1">Payment Receipt</th>
+                                            <th>Mission ID</th>
+                                            <th data-priority="1">Date Of Receipt</th>
+                                            <th data-priority="3">Completion Date</th>
+                                            <th data-priority="1">Address</th>
+                                            <th data-priority="1">Status</th>
+                                            <!--<th data-priority="3">
+                                                <div class="form-group">
 
+                                                    <script type="text/javascript">
+                                                        jQuery(document).ready(function($) {
+                                                            $("#sboxit-2").selectBoxIt({
+                                                                showFirstOption: false
+                                                            }).on('open', function() {
+                                                                // Adding Custom Scrollbar
+                                                                $(this).data('selectBoxSelectBoxIt').list.perfectScrollbar();
+                                                            });
+                                                        });
+                                                    </script>
+
+                                                    <select class="form-control" id="sboxit-2">
+														<option>Status</option>
+														<option>Received</option>
+														<option>In Process-Gsource</option>
+														<option>Completed-Gsource</option>
+														<option>Revisions</option>
+													</select>
+
+                                                </div>
+                                            </th>-->
+
+                                            <th data-priority="3">Acreage</th>
+                                            <th data-priority="3">Contours</th>
+                                            <!--<th data-priority="3">
+                                                <div class="form-group">
+
+                                                    <script type="text/javascript">
+                                                        jQuery(document).ready(function($) {
+                                                            $("#sboxit-3").selectBoxIt({
+                                                                showFirstOption: false
+                                                            }).on('open', function() {
+                                                                // Adding Custom Scrollbar
+                                                                $(this).data('selectBoxSelectBoxIt').list.perfectScrollbar();
+                                                            });
+                                                        });
+                                                    </script>
+
+                                                    <select class="form-control" id="sboxit-3">
+														<option>Contours</option>
+														<option>Low</option>
+														<option>Medium</option>
+														<option>High</option>
+													</select>
+
+                                                </div>
+                                            </th>-->
+                                            <!--<th data-priority="3">
+                                                <div class="form-group">
+                                                    <script type="text/javascript">
+                                                        jQuery(document).ready(function($) {
+                                                            $("#sboxit-4").selectBoxIt({
+                                                                showFirstOption: false
+                                                            }).on('open', function() {
+                                                                // Adding Custom Scrollbar
+                                                                $(this).data('selectBoxSelectBoxIt').list.perfectScrollbar();
+                                                            });
+                                                        });
+                                                    </script>
+                                                    <select class="form-control" id="sboxit-4">
+													<option>Drafting Density</option>
+													<option>Low</option>
+													<option>Medium</option>
+													<option>High</option>
+												</select>
+                                                </div>
+                                            </th>-->
+                                            <th data-priority="6">Drafting Density</th>
+                                            <th data-priority="6">Additional Instructions</th>
+                                            <th data-priority="6">Google Image</th>
+                                            <th data-priority="6">CAD Linework Amount</th>
+                                            <th data-priority="6">Payment ID</th>
+                                            <th data-priority="6">Payment Status</th>
+                                            <th data-priority="6">DWG File</th>
+                                            <th data-priority="6">PDF File</th>
                                         </tr>
                                     </thead>
                                     <tbody style="white-space:nowrap;">
                                         <tr>
-                                            <td>P226</td>
-                                            <td>Drone</td>
-                                            <td>$500</td>
-                                            <td>9/06/2016</td>
-                                            <td>Received</td>
-                                            <td>Card</td>
-                                            <td>9/06/2016</td>
-                                            <td>_____</td>
+                                            <th><a href="#">M- 120</a></th>
+                                            <td>4/01/2016</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
+                                            <td>$300</td>
+                                            <td>P220</td>
+                                            <td>Paid</td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td>P225</td>
-                                            <td>DFM</td>
-                                            <td>$500</td>
-                                            <td>9/06/2016</td>
-                                            <td>Received</td>
-                                            <td>Card</td>
-                                            <td>9/06/2016</td>
-                                            <td>_____</td>
-                                        </tr>
-                                        <tr>
-                                            <td>P224</td>
-                                            <td>CAD Linework</td>
-                                            <td>$500</td>
-                                            <td>9/06/2016</td>
-                                            <td>Received</td>
-                                            <td>Wire</td>
-                                            <td>9/06/2016</td>
-                                            <td>_____</td>
-                                        </tr>
-                                        <tr>
-                                            <td>P223</td>
-                                            <td>CAD Linework</td>
-                                            <td>$500</td>
-                                            <td>9/06/2016</td>
-                                            <td>Received</td>
-                                            <td>Card</td>
-                                            <td>9/06/2016</td>
-                                            <td>_____</td>
-                                        </tr>
-                                        <tr>
-                                            <td>P222</td>
-                                            <td>Drone</td>
-                                            <td>$500</td>
-                                            <td>9/06/2016</td>
-                                            <td>Received</td>
-                                            <td>Wire</td>
-                                            <td>9/06/2016</td>
-                                            <td>_____</td>
-                                        </tr>
-                                        <tr>
+                                            <th><a href="#">M- 121</a></th>
+                                            <td>4/01/2016</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                           <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
+                                            <td>$300</td>
                                             <td>P221</td>
-                                            <td>DFM</td>
-                                            <td>$500</td>
-                                            <td>9/06/2016</td>
-                                            <td>Received</td>
-                                            <td>Card</td>
-                                            <td>9/06/2016</td>
-                                            <td>_____</td>
+                                            <td>Paid</td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
+                                        <tr>
+                                            <th><a href="#">M- 122</a></th>
+                                            <td>4/01/2016</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                           <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
+                                            <td>$300</td>
+                                            <td>P222</td>
+                                            <td>Paid</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">M- 123</a></th>
+                                            <td>4/01/2016</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                           <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
+                                            <td>$300</td>
+                                            <td>P223</td>
+                                            <td>Paid</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">M- 124</a></th>
+                                            <td>4/01/2016</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                           <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
+                                            <td>$300</td>
+                                            <td>P224</td>
+                                            <td>Unpaid</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">M- 125</a></th>
+                                            <td>4/01/2016</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                           <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
+                                            <td>$300</td>
+                                            <td>P225</td>
+                                            <td>Paid</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">M- 126</a></th>
+                                            <td>4/01/2016</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                           <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
+                                            <td>$300</td>
+                                            <td>P226</td>
+                                            <td>Unpaid</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+
+
 
                                     </tbody>
                                 </table>
