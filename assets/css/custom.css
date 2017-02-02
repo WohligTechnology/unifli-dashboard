@@ -41,7 +41,34 @@ th, td {
     border-bottom-right-radius: 20px;
 
 }
+.card-login1{
+    border: 1px solid grey;
+ padding: 22px;
+ display: inline-block;
+ width: 70%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.test{
+    display: inline-block;
+    padding: 10px;
+}
 
 .form-control{
   width: auto;
+}
+.scroll-x{
+    overflow-x: hidden;
+}
+.scroll-y{
+    overflow-y: hidden;
+}
+.para{
+    border: 2px solid;
+    padding: 5px;
+}
+.test-1{
+    margin-top: 55px;
+    margin-right: 30px;
 }
