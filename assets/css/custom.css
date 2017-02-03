@@ -107,3 +107,9 @@ td {
 .select-w{
     width: 150px!important;
 }
+.example{
+    width: 300px;
+}
+.proceed{
+    margin-top: 20px;
+}
