@@ -104,3 +104,13 @@ td {
     margin: 0 auto;
     display: block;
 }
+.select-w{
+    width: 150px!important;
+}
+.tb-border{
+    tr{
+        th:after{
+            background-color:tranparent;
+        }
+    }
+}
