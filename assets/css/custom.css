@@ -107,10 +107,3 @@ td {
 .select-w{
     width: 150px!important;
 }
-.tb-border{
-    tr{
-        th:after{
-            background-color:tranparent;
-        }
-    }
-}
