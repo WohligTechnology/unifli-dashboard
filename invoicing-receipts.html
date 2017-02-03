@@ -171,7 +171,13 @@
                     <li class=" has">
                         <a href="support-raise-ticket.html">
                             <i class="fa-support"></i>
-                            <span class="title">Support Raise a Ticket</span>
+                            <span class="title">Suppor</span>
+                        </a>
+                    </li>
+                     <li class=" has">
+                        <a href="raise-ticket.html">
+                            <i class="fa-ticket"></i>
+                            <span class="title">Raise a Ticket</span>
                         </a>
                     </li>
                 </ul>
@@ -426,7 +432,12 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-8">
+                                <div class="form-group expense ">
+                                    <h3 for="expenses">Total Expenses</h3>
+								</div>
+                                </div>
+                                <!--<div class="col-md-4">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <input type="text" placeholder="From Date" class="form-control datepicker" data-format="D, dd MM yyyy">
@@ -441,7 +452,7 @@
                                             <div class="input-group-addon"> <a href="#"><i class="linecons-calendar"></i></a> </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <select class="form-control"> 
@@ -455,10 +466,7 @@
                                     </div>
                                 </div>
                             </div>
-                            	<div class="form-group expense ">
-                                    <label for="expenses">Total Expenses</label>
-									<input type="number" class="form-control" id="expenses" placeholder="Total Expenses">
-								</div>
+                            	
                             <div style="  overflow: scroll;">
                                 <table cellspacing="0" class="table table-small-font table-bordered table-striped">
                                     <!--<thead style="white-space:nowrap;">
@@ -491,8 +499,8 @@
                                             <td>Drone</td>
                                             <td>$500</td>
                                             <td>9/06/2016</td>
-                                            <td>Received</td>
-                                            <td>Card</td>
+                                            <td>Declined</td>
+                                            <td><button type="button"  class="btn btn-gray">Pay now</button></td>
                                             <td>9/06/2016</td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
@@ -521,8 +529,8 @@
                                             <td>CAD Linework</td>
                                             <td>$500</td>
                                             <td>9/06/2016</td>
-                                            <td>Received</td>
-                                            <td>Card</td>
+                                            <td>Unpaid</td>
+                                            <td><button type="button" class="btn btn-gray">Pay now</button></td>
                                             <td>9/06/2016</td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
