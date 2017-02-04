@@ -104,21 +104,61 @@ td {
     margin: 0 auto;
     display: block;
 }
-.select-w{
+
+.select-w {
     width: 150px!important;
 }
-.example{
+
+.example {
     width: 300px;
 }
-.proceed{
+
+.proceed {
     margin-top: 20px;
 }
-.request-button{
+
+.request-button {
     background-color: #014c7e;
-    color:white;
+    color: white;
 }
-.request-button:hover{
+
+.request-button:hover {
     background-color: #014c7e;
-     border: none;
-     color:white;
+    border: none;
+    color: white;
+}
+
+.chat-box {
+    max-height: 300px;
+    overflow: auto;
+}
+
+.chat-box li {
+    padding: 5px 10px;
+    text-align: left;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #494949;
+    margin-right: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.chat-box li.me {
+    background-color: #e5e5e5;
+    text-align: right;
+    margin-left: 20px;
+    border: 0px;
+    margin-right: 0px;
+}
+
+.date {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+    left: 0;
+    color: #7d7d7d;
 }
