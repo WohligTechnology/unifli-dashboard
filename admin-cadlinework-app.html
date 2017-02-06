@@ -478,12 +478,12 @@
                                  <div class="form-group">
                                         <select class="form-control">
                                             <option>Select Status</option>
+                                            <option>Replied</option>
+                                            <option>Resolved</option>
                                             <option>In Process</option>
-                                            <option>In QC</option>
-                                            <option>Revisions</option>
-                                            <option>Completed</option>
+                                            <option>Closed</option>
+                                            <option>No Reply</option>
                                             </select>
-
                                     </div>
 
                                 </div>
@@ -496,22 +496,22 @@
                                     <thead style="white-space:nowrap;">
                                         <tr>
                                             <th>Mission ID</th>
+                                            <th>User ID</th>
                                             <th data-priority="1">Date Of Receipt</th>
                                             <th data-priority="3">Completion Date</th>
                                             <th data-priority="1">Address</th>
                                             <th>Status</th>
-
                                             <th data-priority="3">Acreage</th>
-                                            <th data-priority="3">Counters
-                                            </th>
-                                            <th data-priority="3">Drafting Density
-                                            </th>
+                                            <th data-priority="3">Contours</th>
+                                            <th data-priority="3">Drafting Density</th>
                                             <th data-priority="6">Contour Density</th>
                                             <th data-priority="6">Additional Instructions</th>
                                             <th data-priority="6">Google Image</th>
                                             <th data-priority="6">CAD Linework Amount</th>
                                             <th data-priority="6">Payment ID</th>
                                             <th data-priority="6">Payment Status</th>
+                                            <th data-priority="6">Vendor Billing Status</th>
+                                            <th data-priority="6">Vendor Charge</th>
                                             <th data-priority="6">DWG File</th>
                                             <th data-priority="6">PDF File</th>
                                         </tr>
@@ -519,6 +519,7 @@
                                     <tbody style="white-space:nowrap;">
                                         <tr>
                                             <th><a href="#" class="id-underline">M- 120</a></th>
+                                            <td>40120</td>
                                             <td>4/01/2016</td>
                                             <td></td>
                                             <td></td>
@@ -529,6 +530,9 @@
                                                             <a href="#">In Process</a>
                                                         </li>
                                                         <li>
+                                                            <a href="#">Hold</a>
+                                                        </li>
+                                                        <li>
                                                             <a href="#">In QC</a>
                                                         </li>
                                                         <li>
@@ -537,20 +541,16 @@
                                                         <li>
                                                             <a href="#">Completed</a>
                                                         </li>
-
-
                                                     </ul>
-                                                </li></td>
+                                                </li>
+                                                </td>
                                             <td></td>
                                             <td>
                                                 <div class="form-group ">
                                                     <select class="form-control select-w">
-
 														<option>Yes</option>
 														<option>No</option>
-
 													</select>
-
                                                 </div>
                                                 </td>
                                             <td>
@@ -575,11 +575,21 @@
                                             <td>$300</td>
                                             <td>P220</td>
                                             <td>Paid</td>
+                                            <td>
+                                            <div class="form-group ">
+                                                <select class="form-control select-w">
+                                                    <option>Paid</option>
+                                                    <option>Unpaid</option>
+                                                </select>
+                                            </div>
+                                            </td>
+                                            <td></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
                                         <tr>
                                             <th><a href="#" class="id-underline">M- 121</a></th>
+                                              <td>50220</td>
                                             <td>4/01/2016</td>
                                             <td></td>
                                             <td></td>
@@ -589,7 +599,9 @@
                                                         <li>
                                                             <a href="#">In Process</a>
                                                         </li>
-
+                                                        <li>
+                                                            <a href="#">Hold</a>
+                                                        </li>
                                                         <li>
                                                             <a href="#">In QC</a>
                                                         </li>
@@ -635,11 +647,21 @@
                                             <td>$300</td>
                                             <td>P221</td>
                                             <td>Paid</td>
+                                            <td>
+                                            <div class="form-group ">
+                                                <select class="form-control select-w">
+                                                    <option>Paid</option>
+                                                    <option>Unpaid</option>
+                                                </select>
+                                            </div>
+                                            </td>
+                                            <td></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
                                         <tr>
                                             <th><a href="#" class="id-underline">M- 122</a></th>
+                                              <td>40320</td>
                                             <td>4/01/2016</td>
                                             <td></td>
                                             <td></td>
@@ -649,7 +671,9 @@
                                                         <li>
                                                             <a href="#">In Process</a>
                                                         </li>
-
+                                                        <li>
+                                                            <a href="#">Hold</a>
+                                                        </li>
                                                         <li>
                                                             <a href="#">In QC</a>
                                                         </li>
@@ -706,11 +730,21 @@
                                             <td>$300</td>
                                             <td>P222</td>
                                             <td>Paid</td>
+                                            <td>
+                                            <div class="form-group ">
+                                                <select class="form-control select-w">
+                                                    <option>Paid</option>
+                                                    <option>Unpaid</option>
+                                                </select>
+                                            </div>
+                                            </td>
+                                            <td></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
                                         <tr>
                                             <th><a href="#" class="id-underline">M- 123</a></th>
+                                              <td>50420</td>
                                             <td>4/01/2016</td>
                                             <td></td>
                                             <td></td>
@@ -720,7 +754,9 @@
                                                         <li>
                                                             <a href="#">In Process</a>
                                                         </li>
-
+                                                        <li>
+                                                            <a href="#">Hold</a>
+                                                        </li>
                                                         <li>
                                                             <a href="#">In QC</a>
                                                         </li>
@@ -777,11 +813,21 @@
                                             <td>$300</td>
                                             <td>P223</td>
                                             <td>Paid</td>
+                                            <td>
+                                            <div class="form-group ">
+                                                <select class="form-control select-w">
+                                                    <option>Paid</option>
+                                                    <option>Unpaid</option>
+                                                </select>
+                                            </div>
+                                            </td>
+                                            <td></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
                                         <tr>
                                             <th><a href="#" class="id-underline">M- 124</a></th>
+                                              <td>80520</td>
                                             <td>4/01/2016</td>
                                             <td></td>
                                             <td></td>
@@ -791,7 +837,9 @@
                                                         <li>
                                                             <a href="#">In Process</a>
                                                         </li>
-
+                                                        <li>
+                                                            <a href="#">Hold</a>
+                                                        </li>
                                                         <li>
                                                             <a href="#">In QC</a>
                                                         </li>
@@ -835,11 +883,21 @@
                                             <td>$300</td>
                                             <td>P224</td>
                                             <td>Unpaid</td>
+                                            <td>
+                                            <div class="form-group ">
+                                                <select class="form-control select-w">
+                                                    <option>Paid</option>
+                                                    <option>Unpaid</option>
+                                                </select>
+                                            </div>
+                                            </td>
+                                            <td></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
                                         <tr>
                                             <th><a href="#" class="id-underline">M- 125</a></th>
+                                              <td>90620</td>
                                             <td>4/01/2016</td>
                                             <td></td>
                                             <td></td>
@@ -849,7 +907,9 @@
                                                         <li>
                                                             <a href="#">In Process</a>
                                                         </li>
-
+                                                        <li>
+                                                            <a href="#">Hold</a>
+                                                        </li>
                                                         <li>
                                                             <a href="#">In QC</a>
                                                         </li>
@@ -906,11 +966,21 @@
                                             <td>$300</td>
                                             <td>P225</td>
                                             <td>Paid</td>
+                                            <td>
+                                            <div class="form-group ">
+                                                <select class="form-control select-w">
+                                                    <option>Paid</option>
+                                                    <option>Unpaid</option>
+                                                </select>
+                                            </div>
+                                            </td>
+                                            <td></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
                                         <tr>
                                             <th><a href="#" class="id-underline">M- 126</a></th>
+                                              <td>50421</td>
                                             <td>4/01/2016</td>
                                             <td></td>
                                             <td></td>
@@ -920,7 +990,9 @@
                                                         <li>
                                                             <a href="#">In Process</a>
                                                         </li>
-                                                      
+                                                        <li>
+                                                            <a href="#">Hold</a>
+                                                        </li>
                                                         <li>
                                                             <a href="#">In QC</a>
                                                         </li>
@@ -977,6 +1049,15 @@
                                             <td>$300</td>
                                             <td>P226</td>
                                             <td>Unpaid</td>
+                                            <td>
+                                            <div class="form-group ">
+                                                <select class="form-control select-w">
+                                                    <option>Paid</option>
+                                                    <option>Unpaid</option>
+                                                </select>
+                                            </div>
+                                            </td>
+                                            <td></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                             <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
