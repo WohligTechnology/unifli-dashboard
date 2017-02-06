@@ -83,7 +83,7 @@ td {
 .create {
     background-color: #014c7e;
     border: none;
-    
+
 }
 
 .create:hover {
@@ -161,4 +161,7 @@ td {
     padding: 0 10px;
     left: 0;
     color: #7d7d7d;
+}
+.profile-input{
+  margin: 10px;
 }
