@@ -179,3 +179,16 @@ td {
 .account{
   margin: 20px 0px;
 }
+.btn1{
+    height: 50px;
+    margin-bottom: 1px;
+}
+.btn2{
+    height: 30px;
+    margin-top: 10px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #014c7e;
+    border-color: #014c7e;
+}

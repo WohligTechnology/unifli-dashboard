@@ -1,4 +1,4 @@
-profile.html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,7 +7,7 @@ profile.html<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Xenon Boostrap Admin Panel" />
     <meta name="author" content="" />
-    <title>Unifli - Support</title>
+    <title>Unifli - Invoicing / Receipts</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
@@ -30,6 +30,7 @@ profile.html<!DOCTYPE html>
         <a href="#" data-toggle="settings-pane" data-animate="true">
 			&times;
 		</a>
+
         <div class="settings-pane-inner">
             <div class="row">
                 <div class="col-md-4">
@@ -111,10 +112,6 @@ profile.html<!DOCTYPE html>
         </div>
     </div>
     <div class="page-container">
-        <!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
-        <!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
-        <!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
-        <!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
         <div class="sidebar-menu toggle-others fixed">
             <div class="sidebar-menu-inner">
                 <header class="logo-env">
@@ -150,7 +147,7 @@ profile.html<!DOCTYPE html>
                 <ul id="main-menu" class="main-menu">
                     <!-- add class "multiple-expanded" to allow multiple submenus to open -->
                     <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
-                       <li class=" has">
+                      <li class=" has">
                         <a href="dashboard.html">
                             <i class="linecons-cog"></i>
                             <span class="title">Dashboard</span>
@@ -162,7 +159,7 @@ profile.html<!DOCTYPE html>
                             <span class="title">Missions</span>
                         </a>
                     </li>
-                    <li class="  has">
+                      <li class="  has">
                         <a href="request-cadlinework.html">
                             <i class="fa-won"></i>
                             <span class="title">Request Cad Line Work</span>
@@ -174,7 +171,7 @@ profile.html<!DOCTYPE html>
                             <span class="title">CAD Linework Application</span>
                         </a>
                     </li>
-                    <li class=" has">
+                    <li class="active has">
                         <a href="invoicing-receipts.html">
                             <i class="fa-file-text-o"></i>
                             <span class="title">Invoicing / Receipts</span>
@@ -186,16 +183,16 @@ profile.html<!DOCTYPE html>
                             <span class="title"> Plans</span>
                         </a>
                     </li>
-                    <li class="active has">
+                    <li class=" has">
                         <a href="support.html">
                             <i class="fa-support"></i>
                             <span class="title">Support</span>
                         </a>
                     </li>
-                    <li class=" has">
+                     <li class=" has">
                         <a href="raise-ticket.html">
                             <i class="fa-ticket"></i>
-                            <span class="title"> Raise a Ticket</span>
+                            <span class="title">Raise a Ticket</span>
                         </a>
                     </li>
                 </ul>
@@ -430,17 +427,17 @@ profile.html<!DOCTYPE html>
 							</span>
                         </a>
                         <ul class="dropdown-menu user-profile-menu list-unstyled">
-                             <li class="">
-                               <a href="profile.html">
-                                   <i class="fa-user"></i> Profile
-                               </a>
-                           </li>
+                          <li class="">
+                              <a href="profile.html">
+                                  <i class="fa-user"></i> Profile
+                              </a>
+                          </li>
 
-                           <li class="">
-                               <a href="account.html">
-                                   <i class="fa-credit-card"></i> Account
-                               </a>
-                           </li>
+                          <li class="">
+                              <a href="account.html">
+                                  <i class="fa-credit-card"></i> Account
+                              </a>
+                          </li>
                             <li class="last">
                                 <a href="extra-lockscreen.html">
                                     <i class="fa-lock"></i> Logout
@@ -452,7 +449,7 @@ profile.html<!DOCTYPE html>
             </nav>
             <div class="page-title">
                 <div class="title-env">
-                    <h1 class="title">Support Raise a Ticket</h1>
+                    <h1 class="title">Invoicing / Receipts</h1>
                 </div>
             </div>
             <!-- Responsive Table -->
@@ -460,15 +457,13 @@ profile.html<!DOCTYPE html>
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
-
- <div class="row">
+                            <div class="row">
                                 <!--<div class="col-md-8">
                                 <div class="form-group  ">
-                                    <h4 for="expenses">CAD Linework Expenses : $25,21,545</h4>
+                                    <h4 for="expenses">Total Expenses : $25,21,545</h4>
 								</div>
                                 </div>-->
-
-                                    <div class="col-md-12">
+                                <div class="col-md-12">
                                 <section class="search-env" >
 						<form method="get" action="" enctype="application/x-www-form-urlencoded">
 							<input type="text" class="form-control input-lg" placeholder="Search..." name="s"  />
@@ -480,7 +475,7 @@ profile.html<!DOCTYPE html>
                                 </section>
                                 </div>
 
-				   <div class="col-md-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <input type="text" placeholder="From Date" class="form-control datepicker" data-format="D, dd MM yyyy">
@@ -497,7 +492,7 @@ profile.html<!DOCTYPE html>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                 <div class="form-group">
+                                    <div class="form-group">
                                         <select class="form-control">
                                             <option>Select Status</option>
                                             <option>Replied</option>
@@ -507,18 +502,12 @@ profile.html<!DOCTYPE html>
                                             <option>No Reply</option>
                                             </select>
                                     </div>
-
                                 </div>
-                                </div>
-
-
-
-
-
+                            </div>
 
                             <div style="  overflow: scroll;">
                                 <table cellspacing="0" class="table table-small-font table-bordered table-striped">
-                                    <thead style="white-space:nowrap;">
+                                    <!--<thead style="white-space:nowrap;">
                                         <tr>
                                             <th>Tickets ID</th>
                                             <th data-priority="1">Ticket Details</th>
@@ -528,157 +517,108 @@ profile.html<!DOCTYPE html>
                                             <th data-priority="1">Tickets Status</th>
                                             <th data-priority="1">Ticket Closing Date</th>
                                         </tr>
+                                    </thead>-->
+                                    <thead style="white-space:nowrap;">
+                                        <tr>
+                                            <th>Payment ID</th>
+                                            <th data-priority="1">Sold Items</th>
+                                            <th data-priority="3">Cost</th>
+                                            <th data-priority="1">Transaction Date</th>
+                                            <th data-priority="1">Payment Status</th>
+                                            <th data-priority="1">Payment Mode</th>
+                                            <th data-priority="1">Payment Date</th>
+                                            <th data-priority="1">Payment Receipt</th>
+
+                                        </tr>
                                     </thead>
                                     <tbody style="white-space:nowrap;">
                                         <tr>
-                                            <td>
-                                               <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">T-105</a>
-                                            </td>
-                                            <td>_____</td>
-                                            <td>9/06/2016</td>
+                                            <td>P226</td>
                                             <td>Drone</td>
-                                            <td>90620</td>
-                                            <td>Replied</td>
+                                            <td>$500</td>
                                             <td>9/06/2016</td>
+                                            <td>Declined</td>
+                                            <td><button type="button"  class="btn btn-gray">Pay now</button></td>
+                                            <td>9/06/2016</td>
+                                            <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">T-106</a>
-                                            </td>
-                                            <td>_____</td>
-                                            <td>3/06/2016</td>
-                                            <td>DFM Subsription</td>
-                                            <td>90620</td>
-                                            <td>Resolved</td>
+                                            <td>P225</td>
+                                            <td>DFM</td>
+                                            <td>$500</td>
                                             <td>9/06/2016</td>
+                                            <td>Received</td>
+                                            <td>Card</td>
+                                            <td>9/06/2016</td>
+                                            <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">T-107</a>
-                                            </td>
-                                            <td>_____</td>
-                                            <td>1/06/2016</td>
+                                            <td>P224</td>
+                                            <td>CAD Linework</td>
+                                            <td>$500</td>
+                                            <td>9/06/2016</td>
+                                            <td>Received</td>
+                                            <td>Wire</td>
+                                            <td>9/06/2016</td>
+                                            <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>P223</td>
+                                            <td>CAD Linework</td>
+                                            <td>$500</td>
+                                            <td>9/06/2016</td>
+                                            <td>Unpaid</td>
+                                            <td><button type="button" class="btn btn-gray">Pay now</button></td>
+                                            <td>9/06/2016</td>
+                                            <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>P222</td>
                                             <td>Drone</td>
-                                            <td>90620</td>
-                                            <td>In Process</td>
+                                            <td>$500</td>
                                             <td>9/06/2016</td>
+                                            <td>Received</td>
+                                            <td>Wire</td>
+                                            <td>9/06/2016</td>
+                                            <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">T-108</a>
-                                            </td>
-                                            <td>_____</td>
-                                            <td>28/05/2016</td>
-                                            <td>CAD Linework</td>
-                                            <td>90620</td>
-                                            <td>Closed</td>
+                                            <td>P221</td>
+                                            <td>DFM</td>
+                                            <td>$500</td>
                                             <td>9/06/2016</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">T-109</a>
-                                            </td>
-                                            <td>_____</td>
-                                            <td>25/08/2016</td>
-                                            <td>CAD Linework</td>
-                                            <td>90620</td>
-                                            <td>No Reply</td>
+                                            <td>Received</td>
+                                            <td>Card</td>
                                             <td>9/06/2016</td>
+                                            <td class="text-center"><button class="btn btn-default"><i class="fa-download"></i></button></td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">T-110</a>
-                                            </td>
-                                            <td>_____</td>
-                                            <td>22/08/2016</td>
-                                            <td>DFM Subsription</td>
-                                            <td>90620</td>
-                                            <td>Replied</td>
-                                            <td>9/06/2016</td>
-                                        </tr>
+
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="modal fade custom-width" id="modal-6">
-		<div class="modal-dialog" style="width: 60%;">
-			<div class="modal-content">
-
-				<div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title">T-105</h4>
-                                        </div>
-
-				  <div class="modal-body">
-                                            <div class="chat-box">
-                                                <ul class="list-unstyled">
-                                                    <li class="me">
-                                                        <span>Hello!</span>
-                                                        <span class="date">12 September, 2016 05:00pm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span>Hello!</span>
-                                                        <span class="date">12 September, 2016 05:00pm</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                <div class="modal-footer">
-                                            <div class="row">
-                                                <!--<div class="col-md-4">
-                                                    <select class="form-control">
-                                                    <option value="">Mark As:</option>
-                                                    <option value="Replied">Replied</option>
-                                                    <option value="In Process">In Process</option>
-                                                    <option value="No Reply">No Reply</option>
-                                                    <option value="Closed">Closed</option>
-                                                </select>
-                                                </div>-->
-                                                <div class="col-md-12">
-                                                    <div class="input-group">
-                                                        <textarea class="form-control no-right-border form-focus-info" placeholder="Type message here..."></textarea>
-                                                       
-                                             <span class="input-group-btn"> <button class="btn btn-info btn1" type="button"><i class="fa fa-paper-plane"></i></button> </span>  
-                                                                                                      </div>
-                                                                                                      <div class="btn2"><span class="input-group-btn"> <button class="btn btn-info btn2" type="button">Submit</button> </span> </div>
-                                                </div>
-
-
-			</div>
-		</div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
+                            <ul class="pagination">
+                                <li><a href="#">Previous</a></li>
+                                <li><a href="#">1</a></li>
+                                <li class="active"><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li class="disabled"><a href="#">4</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
                         </div>
-                        <ul class="pagination">
-                            <li><a href="#">Previous</a></li>
-                            <li><a href="#">1</a></li>
-                            <li class="active"><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li class="disabled"><a href="#">4</a></li>
-                            <li><a href="#">Next</a></li>
-                        </ul>
+                        <script type="text/javascript">
+                            // This JavaScript Will Replace Checkboxes in dropdown toggles
+                            jQuery(document).ready(function ($) {
+                                setTimeout(function () {
+                                    $(".checkbox-row input").addClass('cbr');
+                                    cbr_replace();
+                                }, 0);
+                            });
+                        </script>
                     </div>
-                    <script type="text/javascript">
-                        // This JavaScript Will Replace Checkboxes in dropdown toggles
-                        jQuery(document).ready(function ($) {
-                            setTimeout(function () {
-                                $(".checkbox-row input").addClass('cbr');
-                                cbr_replace();
-                            }, 0);
-                        });
-                    </script>
                 </div>
             </div>
         </div>
-    </div>
-    </footer>
+        </footer>
     </div>
     </div>
     <!-- End: Footer Sticked Chat -->
