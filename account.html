@@ -9,7 +9,7 @@
     <meta name="description" content="Xenon Boostrap Admin Panel" />
     <meta name="author" content="" />
 
-    <title>Unifli - profile</title>
+    <title>Unifli - Account</title>
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
@@ -33,7 +33,7 @@
 
 </head>
 
-<body class="page-body">
+<body class="page-body scroll-x">
 
     <div class="settings-pane">
 
@@ -556,7 +556,7 @@
             <div class="page-title">
 
                 <div class="title-env">
-                    <h1 class="title">Profile</h1></div>
+                    <h1 class="title">Account</h1></div>
 
 
 
@@ -569,10 +569,10 @@
 
                     <div class="panel panel-default">
 
-                        <div class="panel-body">
+                        <div class="panel-body scroll-x">
                       <form class="" action="index.html" method="post">
 
-        						<div class="member-form-add-header">
+        						<!--<div class="member-form-add-header">
         							<div class="row">
         								<div class="col-md-2 col-sm-4 pull-right-sm">
 
@@ -594,49 +594,51 @@
 
         								</div>
         							</div>
-        						</div>
+        						</div>-->
+                            <h4>Card Details</h4>
 
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="col-sm-10 profile-input">
-          										<input type="text" class="form-control" id="name" placeholder="Name">
-          									</div>
-                            <div class="col-sm-10 profile-input">
-          										<input type="text" class="form-control" id="organization" placeholder="Organization">
-          									</div>
-                            <div class="col-sm-10 profile-input">
-          										<input type="number" class="form-control" id="phone" placeholder="Phone">
-          									</div>
-                            <div class="col-sm-10 profile-input">
-          										<input type="text" class="form-control" id="Address" placeholder="Address">
-          									</div>
-                            <div class="col-sm-10 profile-input">
-          										<input type="text" class="form-control" id="state" placeholder="State">
-          									</div>
-                            <div class="col-sm-10 profile-input">
-          										<input type="text" class="form-control" id="website" placeholder="Website">
-          									</div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="col-sm-10 profile-input">
-                              <input type="email" class="form-control" id="Email" placeholder="Email">
-                            </div>
-                            <div class="col-sm-10 profile-input">
-                              <input type="text" class="form-control" id="designation" placeholder="Designation">
-                            </div>
-                            <div class="col-sm-10 profile-input">
-                              <input type="number" class="form-control" id="Mobile" placeholder="Mobile">
-                            </div>
-                            <div class="col-sm-10 profile-input">
-                              <input type="text" class="form-control" id="city" placeholder="city">
-                            </div>
-                            <div class="col-sm-10 profile-input">
-                              <input type="number" class="form-control" id="Zip" placeholder="Zip">
-                            </div>
+                       
 
-                          </div>
+								<div class="form-group">
+									<label class="col-sm-4 control-label">Card Type</label>
+			
+									<div class="col-sm-8">
+										<select class="form-control">
+											<option>Master-card</option>
+											<option>visa</option>
+										
+										</select>
+									</div>
+								</div>
+                                								<div class="form-group-separator"></div>
 
-                        </div>
+                                	<div class="form-group">
+									<label class="col-sm-4 " for="field-1">Card Number</label>
+			
+									<div class="col-sm-8">
+										<input type="number" class="form-control" id="field-1" placeholder="Card Number">
+									</div>
+								</div>
+                                								<div class="form-group-separator"></div>
+
+                                	<div class="form-group">
+									<label class="col-sm-4 " for="Code">Security Code</label>
+			
+									<div class="col-sm-8">
+										<input type="number" class="form-control" id="Code" placeholder="Security Code">
+									</div>
+								</div>
+                                								<div class="form-group-separator"></div>
+
+                                <div class="form-group">
+									<label class="col-sm-4 " for="name">Name on card</label>
+			
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="name" placeholder="Name on card">
+									</div>
+								</div>
+
+                         
 
                         </form>
                         </div>
