@@ -429,6 +429,17 @@
 							</span>
                         </a>
                         <ul class="dropdown-menu user-profile-menu list-unstyled">
+                             <li class="">
+                               <a href="#">
+                                   <i class="fa-user"></i> Profile
+                               </a>
+                           </li>
+
+                           <li class="">
+                               <a href="#">
+                                   <i class="fa-credit-card"></i> Account
+                               </a>
+                           </li>
                             <li class="last">
                                 <a href="extra-lockscreen.html">
                                     <i class="fa-lock"></i> Logout
@@ -492,13 +503,13 @@
                                 <div class="col-md-4">
                                  <div class="form-group">
                                         <select class="form-control"> 
-                                            <option>Select Status</option> 
-                                            <option>Replied</option> 
-                                            <option>Resolved</option>
-                                            <option>In Process</option>
-                                            <option>Closed</option>
-                                            <option>No Reply</option>
+                                        <option>Select Status</option> 
+                                            <option>Queued</option> 
+                                            <option>Error</option>
+                                            <option> Waiting</option>
+                                            <option>Ready</option>
                                             </select>
+                                            
                                     </div>
                          
                                 </div>
@@ -537,7 +548,7 @@
                                         </tr>
                                         <tr>
                                             <th><a href="#" class="id-underline">M- 121</th>
-                                           <td><a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});"   class="btn btn-default request-button" >Request CAD Linework</a></td>
+                                           <td><a href="javascript:;" onclick="jQuery('#modal-4').modal('show', {backdrop: 'static'});"   class="btn btn-default request-button" >Request CAD Linework</a></td>
                                             <td>5/02/2016</td>
                                             <td>_____</td>
                                             <td>_____</td>
@@ -579,7 +590,7 @@
                                         </tr>
                                         <tr>
                                             <th><a href="#" class="id-underline">M- 124</th>
-                                           <td><a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});"   class="btn btn-default request-button" >Request CAD Linework</a></td>
+                                           <td><a href="javascript:;" onclick="jQuery('#modal-4').modal('show', {backdrop: 'static'});"   class="btn btn-default request-button" >Request CAD Linework</a></td>
                                             <td>8/05/2016 </td>
                                             <td>_____</td>
                                             <td>_____</td>
@@ -675,6 +686,48 @@
 							
                             </div>
 
+
+
+                            <div class="modal fade" id="modal-4" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<h4 class="modal-title">Mission Address</h4>
+				</div>
+				
+			
+				<div class="modal-body">
+				
+				
+				
+					<div class="row">
+						<div class="col-md-12">
+							
+							<div class="form-group">
+								
+								<label>Mission Address:</label>
+								
+                                <div><p>Please confirm your Mission address. If you want to process a CAD file request for this project, please click on Confirm and Proceed.</p></div>
+ 
+							</div>	
+							
+						</div>
+					</div>
+				
+					
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Confirm &amp; Proceed</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!--
 <div class="modal fade" id="modal-6">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -709,7 +762,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
     </div>
     <!-- Bottom Scripts -->
     <script src="assets/js/bootstrap.min.js"></script>

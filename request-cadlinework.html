@@ -528,7 +528,17 @@
                         </a>
 
                         <ul class="dropdown-menu user-profile-menu list-unstyled">
+ <li class="">
+                               <a href="#">
+                                   <i class="fa-user"></i> Profile
+                               </a>
+                           </li>
 
+                           <li class="">
+                               <a href="#">
+                                   <i class="fa-credit-card"></i> Account
+                               </a>
+                           </li>
                             <li class="last">
                                 <a href="extra-lockscreen.html">
                                     <i class="fa-lock"></i> Logout
@@ -594,7 +604,7 @@
 								</div>
 
                                     <div class="proceed">
-                                <button type="button"  class="btn btn-blue " onclick="jQuery('#modal-req').modal('show', {backdrop: 'static'});" >Proceed</button>
+                                <button type="button"  class="btn btn-blue " onclick="jQuery('#modal-4').modal('show', {backdrop: 'static'});" >Proceed</button>
                                     </div>
 
                             </div>
@@ -768,45 +778,42 @@
 
     </div>
 
-
-
-    <!-- End: Footer Sticked Chat -->
-    <div class="modal fade" id="modal-req">
+  <div class="modal fade" id="modal-4" data-backdrop="static">
 		<div class="modal-dialog">
 			<div class="modal-content">
-
+				
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Mission Address</h4>
+					<h4 class="modal-title">Mission ID</h4>
 				</div>
-
+				
+			
 				<div class="modal-body">
-
-
-
+				
+				
+				
 					<div class="row">
 						<div class="col-md-12">
-
+							
 							<div class="form-group">
-
-
-								<input type="text" class="form-control" id="field-3" placeholder="Address">
-							</div>
-
+								
+								<label>Mission ID: M-121</label>
+								
+                                <div><p>Please confirm your Mission Id. If you want to process a CAD file request for this project, please click on Confirm and Proceed.</p></div>
+ 
+							</div>	
+							
 						</div>
 					</div>
-
-
+				
+					
 				</div>
-
+				
 				<div class="modal-footer">
-
-					<button type="button" class="btn btn-info">Save</button>
+					<button type="button" class="btn btn-info" data-dismiss="modal">Confirm &amp; Proceed</button>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
     <!-- Bottom Scripts -->
     <script src="assets/js/bootstrap.min.js"></script>
