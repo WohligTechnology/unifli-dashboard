@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Xenon Boostrap Admin Panel" />
     <meta name="author" content="" />
-    <title>Unifli - Missions</title>
+    <title>Unifli - Users</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="../assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
@@ -148,32 +148,43 @@
                 <ul id="main-menu" class="main-menu">
                     <!-- add class "multiple-expanded" to allow multiple submenus to open -->
                     <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
-                   
-					<li class="active  has">
+                    <li class=" has">
+                        <a href="dashboard.html">
+                            <i class="linecons-cog"></i>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+					<li class="  has">
                         <a href="missions.html">
                             <i class="fa-globe"></i>
                             <span class="title">Missions</span>
                         </a>
                     </li>
-                    <li class="  has">
-                        <a href="request-cadlinework.html">
-                            <i class="fa-won"></i>
-                            <span class="title">Request Cad Line Work</span>
+                    <li class="active  has">
+                        <a href="user.html">
+                            <i class="fa-users"></i>
+                            <span class="title">Users</span>
                         </a>
                     </li>
                     <li class=" has">
-                        <a href="cad-linework-app.html">
+                        <a href="cadlinework-app.html">
                             <i class="fa-pencil"></i>
                             <span class="title">CAD Linework Application</span>
                         </a>
                     </li>
-                    <li class=" has">
-                        <a href="invoicing-receipts.html">
-                            <i class="fa-file-text-o"></i>
-                            <span class="title">Invoicing / Receipts</span>
+                     <li class=" has">
+                        <a href="billing.html">
+                            <i class="fa-dot-circle-o"></i>
+                            <span class="title">Billing</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
+                        <a href="support.html">
+                            <i class="fa-support"></i>
+                            <span class="title">Support</span>
+                        </a>
+                    </li>
+                     <!--<li class=" has">
                         <a href="plans.html">
                             <i class="fa-copy"></i>
                             <span class="title"> Plans</span>
@@ -190,7 +201,7 @@
                             <i class="fa-ticket"></i>
                             <span class="title"> Raise a Ticket</span>
                         </a>
-                    </li>
+                    </li>-->
 
                 </ul>
             </div>
@@ -435,7 +446,7 @@
             </nav>
             <div class="page-title">
                 <div class="title-env">
-                    <h1 class="title">Missions</h1>
+                    <h1 class="title">Users</h1>
                 </div>
 				
 
@@ -453,10 +464,8 @@
                                     <h4 for="expenses">CAD Linework Expenses : $25,21,545</h4>
 								</div>
                                 </div>-->
-                              <div class="col-md-6">
-                                    <div class="breadcrumb-env "> <button class="btn btn-primary create">Create Mission</button> </div>
-                                </div>
-                                    <div class="col-md-6">
+                              
+                                    <div class="col-md-12">
                                 <section class="search-env" >
 						<form method="get" action="" enctype="application/x-www-form-urlencoded">
 							<input type="text" class="form-control input-lg" placeholder="Search..." name="s"  />
@@ -504,7 +513,7 @@
                                     <thead style="white-space:nowrap;">
                                         <tr>
                                            
-                                             <th>User Id</th>
+                                             <th>User ID</th>
                                               <th>Name</th>
                                               <th>Email</th>
                                             <th data-priority="1">Address</th>
@@ -520,158 +529,171 @@
                                     </thead>
                                     <tbody style="white-space:nowrap;">
                                         <tr>
-                                            
-                                            <td>4032016</td>
+                                            <td>
+                                               <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
+                                            </td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
-                                            <td><button type="button" class="btn btn-gray">
-								
-							Orthomosaic</button></td>
-                                            <td>_____</td>
-                                            <td>_____</td>
+                                          <td>Active
+                                              <!--<select>
+                                                  <option>Active</option>
+                                                  <option>Suspended</option>
+                                              </select>-->
+                                          </td>
+                                         <td>Standard</td>
+						           <td><select>
+                                               <option>Unifli</option>
+                                               <option>No</option>
+                                            </select></td>
+                                            <td>________</td>
+                                            <td>________</td>
                                         </tr>
                                         <tr>
-                                           
-                                           <td><a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});"   class="btn btn-default request-button" >5042016</a></td>
+                                             <td>
+                                               <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">5042016</a>
+                                            </td>
+                                          
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
-                                            <td><button type="button" class="btn btn-gray">
-								
-							NDVI</button></td>
-                                            <td>_____</td>
-                                            <td>_____</td>
+                         <td>Suspended</td>
+								  <td>PRO</td>
+						             <td><select>
+                                               <option>Unifli</option>
+                                               <option>No</option>
+                                            </select></td>
+                                           <td>________</td>
+                                          <td>________</td>
                                         </tr>
                                         <tr>
-                                            
-                                            <td>8052016</td>
+                                              <td>
+                                               <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">8052016</a>
+                                            </td>
+                                          
                                            <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
-                                            <td><button type="button"  class="btn btn-gray">
-								
-							DEM</button></td>
-                                            <td>_____</td>
-                                            <td>_____</td>
+                                 <td>Active</td>
+                                   <td>Free</td>
+						           <td><select>
+                                               <option>Unifli</option>
+                                               <option>No</option>
+                                            </select></td>
+                                            <td>________</td>
+                                            <td>________</td>
                                         </tr>
                                         <tr>
-                                           
-                                            <td>9062016</td>
+                                            <td>
+                                               <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">9062016</a>
+                                            </td>
+                                          
+                                            
                                            <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
-                                             <td><button type="button"class="btn btn-gray">
-								
-							DVI</button></td>
-                                            <td>_____</td>
-                                            <td>_____</td>
+                               <td>Suspended</td>
+                                 <td>Standard</td>
+						                   <td><select>
+                                               <option>Unifli</option>
+                                               <option>No</option>
+                                            </select></td>
+                                           <td>________</td>
+                                            <td>________</td>
                                         </tr>
                                         <tr>
-                                            <td><a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});"   class="btn btn-default request-button" >4012016</a></td>
+                                             <td>
+                                               <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
+                                            </td>
                                            <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
-                                             <td><button type="button"  class="btn btn-gray">
-								
-						DSM	</button></td>
-                                            <td>_____</td>
-                                            <td>_____</td>
+                               <td>Active</td>
+                                 <td>PRO</td>
+						               <td><select>
+                                               <option>Unifli</option>
+                                               <option>No</option>
+                                            </select></td>
+                                           <td>________</td>
+                                          <td>________</td>
                                         </tr>
                                         <tr>
                                            
-                                            <td>4032016</td>
+                                             <td>
+                                               <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
+                                            </td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
-                                            <td><button type="button"  class="btn btn-gray">
-								
-							Map Viewer</button></td>
-                                            <td>_____</td>
-                                            <td>_____</td>
+                               <td>Suspended</td>
+                                 <td>Free</td>
+						 <td><select>
+                                               <option>Unifli</option>
+                                               <option>No</option>
+                                            </select></td>
+                                           <td>________</td>
+                                           <td>________</td>
                                         </tr>
                                         <tr>
                                             
-                                            <td>4032016</td>
+                                             <td>
+                                               <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
+                                            </td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
-                                             <td><button type="button"  class="btn btn-gray">
-								
-							Point Cloud</button></td>
-                                            <td>_____</td>
-                                            <td>_____</td>
+                                <td>Active</td>
+                                  <td>Standard</td>
+                                   <td><select>
+                                               <option>Unifli</option>
+                                               <option>No</option>
+                                            </select></td>
+						
+                                           <td>________</td>
+                                           <td>________</td>
                                         </tr>
                                         <!-- Repeat -->
                                         <tr>
                                             
-                                            <td>4032016</td>
+                                            <td>
+                                               <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
+                                            </td>
                                            <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
                                             <td>________</td>
-                                            <td>
-                                                <li class="dropdown" style="list-style-type:none;">
-                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DEM<b class="caret"></b></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a href="#">ORTHOMOSAIC</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">DEM</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">NDVI</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">MAP VIEWER</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">DVI</a>
-                                                        </li>
-                                                         <li>
-                                                            <a href="#">DSM</a>
-                                                        </li>
-                                                         <li>
-                                                            <a href="#">3D MODE</a>
-                                                        </li>
-                                                         <li>
-                                                            <a href="#">KMZ EXPORT</a>
-                                                        </li>
-                                                         <li>
-                                                            <a href="#">POINT CLOUD</a>
-                                                        </li>
-                                                          <li>
-                                                            <a href="#">VOLUME CALCULATOR</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                            <td>_____</td>
-                                            <td>_____</td>
+                                            <td>Active</td>
+                                              <td>PRO</td>
+						
+                                           <td><select>
+                                               <option>Unifli</option>
+                                               <option>No</option>
+                                            </select></td>
+                                          <td>________</td>
+                                            <td>________</td>
                                         </tr>
 
                                     </tbody>
@@ -685,8 +707,8 @@
 			<div class="modal-content">
 				
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Mission Address</h4>
+					<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Mission Address</h4>-->
 				</div>
 				
 				<div class="modal-body">
@@ -694,15 +716,30 @@
 				
 				
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-6">
 							
-							<div class="form-group">
+							<!--<div class="form-group">
 								
 								
 								<input type="text" class="form-control" id="field-3" placeholder="Address">
-							</div>	
+							</div>	-->
+
+                            <label>Revenue {Period selection (12/01/2016 to 12/31/2016)}
+OR Revenue till date</label>
+                           <ul>
+                               <li>Drone Sales Revenue</li>
+                                <li>DFM Subscription Revenue</li>
+                                <li>CAD Linework Revenue </li>
+                                 <li>Total Revenue </li>
+                                <li>Total Missions Created</li>
+                                     <li>Total CAD Requests</li>
+                                   <li>DFM Plan : Standard/PRO</li>
+                           </ul>
 							
 						</div>
+                        <div class="col-md-6">
+                            
+                        </div>
 					</div>
 				
 					
@@ -710,7 +747,7 @@
 				
 				<div class="modal-footer">
 					
-					<button type="button" class="btn btn-info">Save</button>
+					<!--<button type="button" class="btn btn-info">Save</button>-->
 				</div>
 			</div>
 		</div>

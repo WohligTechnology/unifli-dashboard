@@ -575,8 +575,7 @@
                                 <div class="">
                                   <h4>TO DATE Your current plan: Trial/Free</h4>
                                   <h5><a href="#">To change or cancel you plan, visit Your Account Page</a></h5>
-                                  <h5><a href="#">Valid from month/date/year until month/date/year (__days left)</a></h5>
-
+                                
                                 </div>
                                 <div class="">
                                   <h5>Usages Limits:</h5>
@@ -813,7 +812,8 @@ Crop
                                              <li>Ground Refinement Points</li>
                                                         <li>(GRP)</li>
                                                        </ul>
- <button class="btn btn-primary create">UPGRADE NOW!</button>
+ <!--<button class="btn btn-primary create">UPGRADE NOW!</button>-->
+ <a href="javascript:;" onclick="jQuery('#modal-4').modal('show', {backdrop: 'static'});"   class="btn btn-default request-button" >UPGRADE NOW!</a>
 
                                                     </td>
     												<td>
@@ -846,7 +846,7 @@ Crop
                                                           <li>Points (GRP)</li>
                                                           <li>Weedspray</li>
                                                         </ul>
-                                                         <button class="btn btn-primary create">UPGRADE NOW!</button>
+                                                          <a href="javascript:;" onclick="jQuery('#modal-4').modal('show', {backdrop: 'static'});"   class="btn btn-default request-button" >UPGRADE NOW!</a>
                                                     </td>
     											</tr>
     										</tbody>
@@ -857,6 +857,45 @@ Crop
 
                           </div>
                         </div>
+
+
+                            <div class="modal fade" id="modal-4" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<!--<h4 class="modal-title">Mission Address</h4>-->
+                    <h4>Alert</h4>
+				</div>
+
+
+				<div class="modal-body">
+
+
+
+					<div class="row">
+						<div class="col-md-12">
+
+							<div class="form-group">
+
+								<p>Are you sure you want to upgrade the plan?</p>
+                                <!--<div><p>Please confirm your Mission address. If you want to process a CAD file request for this project, please click on Confirm and Proceed.</p></div>-->
+
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" data-dismiss="modal">Confirm</button>
+				</div>
+			</div>
+		</div>
+	</div>
                         <!-- <div class="panel-body">
                             <div style="  overflow: scroll;">
 
