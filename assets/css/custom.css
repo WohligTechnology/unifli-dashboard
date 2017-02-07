@@ -195,7 +195,7 @@ td {
 .head-bod{
     margin-right: 10px!important;
 }
-..search-env form button[type=submit]{
+.search-env form button[type=submit]{
   line-height: 0;
   padding: 15px 15px 0;
 }
