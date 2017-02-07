@@ -636,23 +636,17 @@
 
 </div>
  <div class="col-md-6">
-     <table class="table table-bordered table-striped">
-         		<thead>
-											<tr>
-												<th colspan="2" class="text-center">DFM Stats</th>
+   <h4>DFM Stats</h4>
+     <table class="table table-bordered table-striped account">
 
 
-											</tr>
-										</thead>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Active</th>
-
-											</tr>
-										</thead>
 
 										<tbody>
+                      <tr>
+                        <td>Status</td>
+                        <td>Active</td>
+
+                      </tr>
 											<tr>
 												<td>Usage</td>
 												<td>43 days left</td>
@@ -665,19 +659,33 @@
 
 											<tr>
 												<td>Auto Renewal</td>
-												<td>Yes/No</td>
+												<td>
+                           <select class="form-control">
+  											<option>Yes</option>
+  											<option>No</option>
+                      </select></td>
+
 											</tr>
                                             <tr>
 												<td>Change Plan</td>
-												<td>Standard/PRO</td>
-											</tr>
-                                            <tr>
-												<th colspan="2" class="text-center">SAVE CHANGES</th>
+												<td>
+                          <select class="form-control">
+											<option>Standard</option>
+											<option>PRO</option>
 
-											</tr>
+										</select>
+
+  									</td>
+
 
 										</tbody>
 									</table>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-info btn-single create text-center">SAVE CHANGES</button>
+
+                  </div>
+
+
 </div>
 </div>
 
