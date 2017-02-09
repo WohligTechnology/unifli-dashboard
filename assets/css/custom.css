@@ -199,3 +199,6 @@ td {
   line-height: 0;
   padding: 15px 15px 0;
 }
+.modal-footer {
+    border-top: none; 
+}
