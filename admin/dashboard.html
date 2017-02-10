@@ -188,9 +188,21 @@
                         </a>
                     </li>
                      <li class=" has">
+                        <a href="reporting.html">
+                            <i class=" fa-bug"></i>
+                            <span class="title">Reporting</span>
+                        </a>
+                    </li>
+                     <li class=" has">
                         <a href="billing.html">
                             <i class="fa-dot-circle-o"></i>
                             <span class="title">Billing</span>
+                        </a>
+                    </li>
+                     <li class=" has">
+                        <a href="setting.html">
+                            <i class=" fa fa-sliders"></i>
+                            <span class="title">Settings</span>
                         </a>
                     </li>
                     <li class=" has">
@@ -402,7 +414,7 @@
                                             <i class="fa-envelope-o"></i>
                                             <span class="line">
 												New comments waiting approval
-											</span>
+											</sp>an>
                                             <span class="line small time">
 												last week
 											</span>
@@ -461,11 +473,11 @@
                     </li>
                 </ul>
             </nav>
-            <div class="row">
+            <!--<div class="row">
                 <div class="col-sm-3">
                     <div class="xe-widget xe-counter">
                         <div class="xe-label text-center">
-                            <strong class="num">05</strong>
+                            <strong class="num">Drone SaleRevenue</strong>
                             <span>Total Mission Created</span>
                         </div>
                     </div>
@@ -473,7 +485,7 @@
                 <div class="col-sm-3">
                     <div class="xe-widget xe-counter">
                         <div class="xe-label text-center">
-                            <strong class="num">02</strong>
+                            <strong class="num">DFMSubscription Revenue</strong>
                             <span>Total CAD Requests</span>
                         </div>
                     </div>
@@ -494,12 +506,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="row">
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Total Amount Spent</h3>
+                            <h3 class="panel-title">Drone Sale Revenue</h3>
                         </div>
                         <div class="panel-body">
                             <div id="bar-1"></div>
@@ -546,7 +558,7 @@
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Missions Created</h3>
+                            <h3 class="panel-title">DFM Subscription Revenue</h3>
                         </div>
                         <div class="panel-body">
                             <div id="bar-2"></div>
@@ -593,7 +605,7 @@
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">CAD Linework Requested/Completed</h3>
+                            <h3 class="panel-title">Users Registrations</h3>
                         </div>
                         <div class="panel-body">
                             <div id="bar-3"></div>
@@ -645,7 +657,7 @@
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Tickets Rised/Solved</h3>
+                            <h3 class="panel-title">Missions Created</h3>
                         </div>
                         <div class="panel-body">
                             <div id="bar-4"></div>
@@ -694,8 +706,113 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">CAD Linework Received/Completed</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="bar-5"></div>
+                            <script>
+                                $(document).ready(function () {
+
+                                    Highcharts.chart('bar-5', {
+
+                                        chart: {
+                                            type: 'bar'
+                                        },
+                                        title: {
+                                            text: null
+                                        },
+                                        xAxis: {
+                                            categories: ['August 2016', 'September 2016',
+                                                'November 2016', 'December 2016'
+                                            ],
+                                            title: {
+                                                text: null
+                                            }
+                                        },
+                                        yAxis: {
+                                            min: 0,
+                                            labels: {
+                                                overflow: 'justify'
+                                            }
+                                        },
+                                        credits: {
+                                            enabled: false
+                                        },
+                                        series: [{
+                                                name: 'Requested',
+                                                data: [107, 31, 635, 203]
+                                            },
+                                            {
+                                                name: 'Completed',
+                                                data: [107, 31, 635, 203]
+                                            }
+                                        ]
+
+                                    });
+
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">CAD Linework Expenses</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="bar-6"></div>
+                            <script>
+                                $(document).ready(function () {
+
+                                    Highcharts.chart('bar-6', {
+
+                                        chart: {
+                                            type: 'bar'
+                                        },
+                                        title: {
+                                            text: null
+                                        },
+                                        xAxis: {
+                                            categories: ['August 2016', 'September 2016',
+                                                'November 2016', 'December 2016'
+                                            ],
+                                            title: {
+                                                text: null
+                                            }
+                                        },
+                                        yAxis: {
+                                            min: 0,
+                                            labels: {
+                                                overflow: 'justify'
+                                            }
+                                        },
+                                        credits: {
+                                            enabled: false
+                                        },
+                                        series: [{
+                                                name: 'Requested',
+                                                data: [107, 31, 635, 203]
+                                            },
+                                            {
+                                                name: 'Completed',
+                                                data: [107, 31, 635, 203]
+                                            }
+                                        ]
+
+                                    });
+
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
+            <!--<div class="row">
                 <div class="col-sm-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -745,7 +862,7 @@
                                         chart: {
                                             type: 'pie'
                                         },
-                                        title: {
+                                        title: {>
                                             text: null
                                         },
                                         credits: {
@@ -772,7 +889,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             </footer>
         </div>
     </div>

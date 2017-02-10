@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Xenon Boostrap Admin Panel" />
     <meta name="author" content="" />
-    <title>Unifli - Users</title>
+    <title>Unifli - Dashboard</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="../assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
@@ -42,8 +42,7 @@
                         </div>
                         <div class="user-details">
                             <h3>
-                                <!--<a href="extra-profile.html">John Smith</a>-->
-                                <a href="">John Smith</a>
+                                <a href="extra-profile.html">John Smith</a>
                                 <!-- Available statuses: is-online, is-idle, is-busy and is-offline -->
                                 <span class="user-status is-online"></span>
                             </h3>
@@ -113,15 +112,19 @@
         </div>
     </div>
     <div class="page-container">
+        <!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+        <!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+        <!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+        <!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
         <div class="sidebar-menu toggle-others fixed">
             <div class="sidebar-menu-inner">
                 <header class="logo-env">
                     <!-- logo -->
                     <div class="logo">
-                        <a href="dashboard-1.html" class="logo-expanded">
+                        <a href="dashboard.html" class="logo-expanded">
                             <img src="../assets/images/logo.png" width="80" alt="" />
                         </a>
-                        <a href="dashboard-1.html" class="logo-collapsed">
+                        <a href="dashboard.html" class="logo-collapsed">
                             <img src="../assets/images/logo.png" width="40" alt="" />
                         </a>
                     </div>
@@ -142,25 +145,25 @@
                         <a href="#" class="user-profile">
                             <img src="http://themes.laborator.co/xenon/assets/images/user-4.png" width="60" height="60" class="img-circle img-corona"
                                 alt="user-pic">
-                            <span> <strong>John Smith</strong>Page admin</span> </a>
+                                <span> <strong>John Smith</strong>Page admin</span> </a>
                     </div>
                 </section>
-                <ul id="main-menu" class="main-menu">
+                    <ul id="main-menu" class="main-menu">
                     <!-- add class "multiple-expanded" to allow multiple submenus to open -->
                     <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
-                    <li class=" has">
+                   <li class=" has">
                         <a href="dashboard.html">
                             <i class="linecons-cog"></i>
                             <span class="title">Dashboard</span>
                         </a>
                     </li>
-                    <li class="  has">
+					<li class="  has">
                         <a href="missions.html">
                             <i class="fa-globe"></i>
                             <span class="title">Missions</span>
                         </a>
                     </li>
-                    <li class="active  has">
+                    <li class="  has">
                         <a href="user.html">
                             <i class="fa-users"></i>
                             <span class="title">Users</span>
@@ -172,7 +175,6 @@
                             <span class="title">CAD Linework Application</span>
                         </a>
                     </li>
-                    <li class=" has">
                         <a href="drone-sale.html">
                             <i class="fa-binoculars"></i>
                             <span class="title">DRONE Sale Application</span>
@@ -184,13 +186,14 @@
                             <span class="title">DFM Subscriptions</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    
+                     <li class="active has">
                         <a href="reporting.html">
                             <i class=" fa-bug"></i>
                             <span class="title">Reporting</span>
                         </a>
                     </li>
-                    <li class=" has">
+                     <li class=" has">
                         <a href="billing.html">
                             <i class="fa-dot-circle-o"></i>
                             <span class="title">Billing</span>
@@ -215,7 +218,7 @@
                              Management</span>
                         </a>
                     </li>
-                   
+                    
                 </ul>
             </div>
         </div>
@@ -469,328 +472,124 @@
                         </ul>
                     </li>
                 </ul>
-                    </li>
-                </ul>
             </nav>
-            <div class="page-title">
+             <div class="page-title">
                 <div class="title-env">
-                    <h1 class="title">Users</h1>
+                    <h1 class="title">Reporting</h1>
                 </div>
             </div>
-            <!-- Responsive Table -->
-            <div class="row">
+   <div class="row">
                 <div class="col-md-12">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
+                   
+                       
                             <div class="row">
                                 <!--<div class="col-md-8">
                                 <div class="form-group  ">
-                                    <h4 for="expenses">CAD Linework Expenses : $25,21,545</h4>
+                                    <h4 for="expenses">Total Expenses : $25,21,545</h4>
 								</div>
                                 </div>-->
-                                <div class="col-md-12">
-                                    <section class="search-env">
-                                        <form method="get" action="" enctype="application/x-www-form-urlencoded">
-                                            <input type="text" class="form-control input-lg" placeholder="Search..." name="s" />
-                                            <button type="submit" class="btn-unstyled">
-								<i class="linecons-search"></i>
-							</button>
-                                        </form>
-                                    </section>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <input type="text" placeholder="From Date" class="form-control datepicker" data-format="D, dd MM yyyy">
-                                            <div class="input-group-addon"> <a href="#"><i class="linecons-calendar"></i></a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <input type="text" placeholder="To Date" class="form-control datepicker" data-format="D, dd MM yyyy">
-                                            <div class="input-group-addon"> <a href="#"><i class="linecons-calendar"></i></a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <select class="form-control"> 
-                                            <option>Select Status</option> 
-                                            <option>Replied</option> 
-                                            <option>Resolved</option>
-                                            <option>In Process</option>
-                                            <option>Closed</option>
-                                            <option>No Reply</option>
-                                            </select>
-                                    </div>
-                                </div>
-                            </div>
+                               
+                                 <div class="col-md-4  pull-right">
+                                   	<div class="form-group">			
+										<select class="form-control">
+                                            <option>Download as</option>
+											<option>xl</option>
+											<option>csv</option>
+										</select>
+									</div>
+								</div>
+                                    
+                            
                         </div>
-                        <div style="  overflow: scroll;">
-                            <table cellspacing="0" class="table table-small-font table-bordered table-striped">
-                                <thead style="white-space:nowrap;">
-                                    <tr>
-                                        <th>User ID</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th data-priority="1">Address</th>
-                                        <th data-priority="3">City</th>
-                                        <th data-priority="1">State</th>
-                                        <th data-priority="3">Website</th>
-                                        <th data-priority="3">DFM Status</th>
-                                        <th data-priority="6">DFM Plan</th>
-                                        <th data-priority="6">Drone</th>
-                                        <th data-priority="6">Total Revenue</th>
-                                        <th data-priority="6">User Settings</th>
-                                    </tr>
-                                </thead>
-                                <tbody style="white-space:nowrap;">
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>Active
-                                            <!--<select>
-                                                  <option>Active</option>
-                                                  <option>Suspended</option>
-                                              </select>-->
-                                        </td>
-                                        <td>Standard</td>
-                             
-                                        <td>
-                                        <div class="form-group ">
-                                            <select class="form-control select-w">
-                                                <option>Unifli</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">5042016</a>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>Suspended</td>
-                                        <td>PRO</td>
-                                    <td>
-                                        <div class="form-group ">
-                                            <select class="form-control select-w">
-                                                <option>Unifli</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">8052016</a>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>Active</td>
-                                        <td>Free</td>
-                                        <td>
-                                        <div class="form-group ">
-                                            <select class="form-control select-w">
-                                                <option>Unifli</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">9062016</a>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>Suspended</td>
-                                        <td>Standard</td>
-                                       <td>
-                                        <div class="form-group ">
-                                            <select class="form-control select-w">
-                                                <option>Unifli</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>Active</td>
-                                        <td>PRO</td>
-                                     <td>
-                                        <div class="form-group ">
-                                            <select class="form-control select-w">
-                                                <option>Unifli</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>Suspended</td>
-                                        <td>Free</td>
-                                      <td>
-                                        <div class="form-group ">
-                                            <select class="form-control select-w">
-                                                <option>Unifli</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>Active</td>
-                                        <td>Standard</td>
-                                        <td>
-                                        <div class="form-group ">
-                                            <select class="form-control select-w">
-                                                <option>Unifli</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                    </tr>
-                                    <!-- Repeat -->
-                                    <tr>
-                                        <td>
-                                            <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class=" id-underline">4032016</a>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                        <td>Active</td>
-                                        <td>PRO</td>
-                                       <td>
-                                        <div class="form-group ">
-                                            <select class="form-control select-w">
-                                                <option>Unifli</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                        </td>
-                                        <td>________</td>
-                                        <td>________</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                </div>
+           </div>
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <!--<strong class="num">05</strong>-->
+                            <span>Users List</span>
                         </div>
                     </div>
-                    <!--
-<div class="modal fade" id="modal-6">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				
-				<div class="modal-header">
-					<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Mission Address</h4>-->
-                    <!--</div>
-				
-				<div class="modal-body">
-				
-				
-				
-					<div class="row">
-						<div class="col-md-12">-->-->
-                    <!--<div class="form-group">
-								
-								
-								<input type="text" class="form-control" id="field-3" placeholder="Address">
-							</div>	-->
-                    <div class="modal fade custom-width" id="modal-6">
-                        <div class="modal-dialog" style="width: 60%;">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <!--<h4 class="modal-title">T-105</h4>-->
-                                </div>
-                                <div class="modal-body">
-                                    <div class="col-md-12">
-                                        
-                                        <label>Revenue {Period selection (12/01/2016 to 12/31/2016)}
-                                                OR Revenue till date</label>
-                                        <ul>
-                                            <li>Drone Sales Revenue</li>
-                                            <li>DFM Subscription Revenue</li>
-                                            <li>CAD Linework Revenue </li>
-                                            <li>Total Revenue </li>
-                                            <li>Total Missions Created</li>
-                                            <li>Total CAD Requests</li>
-                                            <li>DFM Plan : Standard/PRO</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div id="bar-3"></div>
-                                        <script>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <!--<strong class="num">02</strong>-->
+                            <span>Drone Sales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <!--<strong class="num">21</strong>-->
+                            <span>DFM Sales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <!--<strong class="num">00</strong>-->
+                            <span>CAD Linework Revenue</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <!--<strong class="num">05</strong>-->
+                            <span>CAD Linework Completed List</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <!--<strong class="num">02</strong>-->
+                            <span>CAD Linework Pending List</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <!--<strong class="num">21</strong>-->
+                            <span>CAD Linework Complete vs
+CAD Linework Pending - PIE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+
+
+
+         
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <!--<h3 class="panel-title">Total Amount Spent</h3>-->
+                        </div>
+                        <div class="panel-body">
+
+                            <div id="bar-5"></div>
+                            <script>
                                 $(document).ready(function () {
 
-                                    Highcharts.chart('bar-3', {
+                                    Highcharts.chart('bar-5', {
 
                                         chart: {
                                             type: 'pie'
@@ -803,14 +602,11 @@
                                         },
                                         series: [{
                                             data: [{
-                                                name: '($45000)',
-                                                y: 70.0
-                                            }, {
-                                                name: '($2000) ($47400)',
-                                                y: 10.03
-                                            }, {
-                                                name: '($400)',
-                                                y: 5.38
+                                                name: 'Total DFM Subscription - PIE',
+                                                y: 56.33
+                                            },  {
+                                                name: 'Total Users ',
+                                                y: 10.38
                                             }]
                                         }]
 
@@ -818,20 +614,45 @@
 
                                 });
                             </script>
-                            <div><h4 class="text-center">TOTAL REVENUE</h4></div>
-                                    </div>
-                                    <div class="modal-footer">
-                                    </div>
-                                </div>
-                            </div>
+
+                            <div id="bar-6"></div>
+                            <script>
+                                $(document).ready(function () {
+
+                                    Highcharts.chart('bar-6', {
+
+                                        chart: {
+                                            type: 'pie'
+                                        },
+                                        title: {
+                                            text: null
+                                        },
+                                        credits: {
+                                            enabled: false
+                                        },
+                                        series: [{
+                                            data: [{
+                                                name: 'Total DFM Subscription - PIE',
+                                                y: 56.33
+                                            },  {
+                                                name: 'CAD Linework Revenue vs',
+                                                y: 10.38
+                                            }]
+                                        }]
+
+                                    });
+
+                                });
+                            </script>
+
                         </div>
                     </div>
                 </div>
             </div>
+            </footer>
         </div>
     </div>
-    </div>
-    </div>
+    <!-- End: Footer Sticked Chat -->
     </div>
     <!-- Bottom Scripts -->
     <script src="../assets/js/bootstrap.min.js"></script>
