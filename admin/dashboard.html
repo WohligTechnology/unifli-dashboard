@@ -84,7 +84,7 @@
                                 <span>Help Desk</span>
                             </a>
                         </h4>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled"> <script src="https://code.highcharts.com/modules/exporting.js"></script>
                             <li>
                                 <a href="#">
                                     <i class="fa-angle-right"></i> Support Center
@@ -145,10 +145,10 @@
                         <a href="#" class="user-profile">
                             <img src="http://themes.laborator.co/xenon/assets/images/user-4.png" width="60" height="60" class="img-circle img-corona"
                                 alt="user-pic">
-                                <span> <strong>John Smith</strong>Page admin</span> </a>
+                            <span> <strong>John Smith</strong>Page admin</span> </a>
                     </div>
                 </section>
-                    <ul id="main-menu" class="main-menu">
+                <ul id="main-menu" class="main-menu">
                     <!-- add class "multiple-expanded" to allow multiple submenus to open -->
                     <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
                     <li class=" active has">
@@ -163,7 +163,7 @@
                             <span class="title">Missions</span>
                         </a>
                     </li>
-                       <li class="  has">
+                    <li class="  has">
                         <a href="user.html">
                             <i class="fa-users"></i>
                             <span class="title">Users</span>
@@ -181,25 +181,25 @@
                             <span class="title">DRONE Sale Application</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
                         <a href="dfm-subscription.html">
                             <i class=" fa-caret-square-o-up"></i>
                             <span class="title">DFM Subscriptions</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
                         <a href="reporting.html">
                             <i class=" fa-bug"></i>
                             <span class="title">Reporting</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
                         <a href="billing.html">
                             <i class="fa-dot-circle-o"></i>
                             <span class="title">Billing</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
                         <a href="setting.html">
                             <i class=" fa fa-sliders"></i>
                             <span class="title">Settings</span>
@@ -211,14 +211,13 @@
                             <span class="title">Support Tickets</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
                         <a href="vender.html">
                             <i class="fa-slideshare"></i>
                             <span class="title">Vendor
                              Management</span>
                         </a>
                     </li>
-                      
                 </ul>
             </div>
         </div>
@@ -456,14 +455,11 @@
                                     <i class="fa-user"></i> Profile
                                 </a>
                             </li>
-
                             <li class="">
                                 <a href="account.html">
                                     <i class="fa-credit-card"></i> Account
                                 </a>
                             </li>
-
-
                             <li class="last">
                                 <a href="#">
                                     <i class="fa-lock"></i> Logout
@@ -507,6 +503,86 @@
                     </div>
                 </div>
             </div>-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Top Performers</h3>
+                        </div>
+                        <div id="container" class="hide-y">
+                            <script>
+                           
+                              Highcharts.chart('container', {
+                                chart: {
+                                    type: 'areaspline'
+                                },
+                                title: {
+                                    text: 'Top Performers'
+                                },
+                                legend: {
+                                    layout: 'vertical',
+                                    align: 'left',
+                                    verticalAlign: 'top',
+                                    x: 150,
+                                    y: 100,
+                                    floating: true,
+                                    borderWidth: 1,
+                                    // backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+                                },
+                                xAxis: {
+                                      
+                                    categories: [
+                                        'August 01',
+                                        'August 02',
+                                        'August 03',
+                                        'August 04',
+                                        'August 05',
+                                       
+                                    ],
+                                    min:0,
+                                    plotBands: [{ // visualize the weekend
+                                        from: 4.5,
+                                        to: 6.5,
+                                        // color: 'rgba(68, 170, 213, 0)'
+                                    }]
+                                },
+                                yAxis: {
+                                    title: {
+                                        // text: 'Fruit units'
+                                    },
+                                    min: 0,
+                                    max: 60
+                                },
+                                tooltip: {
+                                    shared: true,
+                                    valueSuffix: ' units'
+                                },
+                                credits: {
+                                    enabled: false
+                                },
+                                plotOptions: {
+                                    areaspline: {
+                                        fillOpacity:  0.5
+                                    }
+                                },
+                                series: [{
+                                    name: 'DRONES',
+                                    data: [10, 40, 10, 45, 30]
+                                }, {
+                                    name: 'DFM',
+                                    data: [30, 10, 30, 15, 30 ]
+                                },
+                                {
+                                    name: 'CAD LINEWORK',
+                                    data: [ ]
+                                }
+                                ]
+                            });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="panel panel-default">
@@ -602,10 +678,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Users Registrations</h3>
+                            <h3 class="panel-title">CAD Linework Revenue</h3>
                         </div>
                         <div class="panel-body">
                             <div id="bar-3"></div>
@@ -638,14 +716,9 @@
                                             enabled: false
                                         },
                                         series: [{
-                                                name: 'Requested',
-                                                data: [107, 31, 635, 203]
-                                            },
-                                            {
-                                                name: 'Completed',
-                                                data: [107, 31, 635, 203]
-                                            }
-                                        ]
+                                            name: 'Usage',
+                                            data: [107, 31, 635, 203]
+                                        }]
 
                                     });
 
@@ -657,7 +730,7 @@
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Missions Created</h3>
+                            <h3 class="panel-title">Users Registrations</h3>
                         </div>
                         <div class="panel-body">
                             <div id="bar-4"></div>
@@ -690,14 +763,9 @@
                                             enabled: false
                                         },
                                         series: [{
-                                                name: 'Requested',
-                                                data: [107, 31, 635, 203]
-                                            },
-                                            {
-                                                name: 'Completed',
-                                                data: [107, 31, 635, 203]
-                                            }
-                                        ]
+                                            name: 'Usage',
+                                            data: [107, 31, 635, 203]
+                                        }]
 
                                     });
 
@@ -706,11 +774,12 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="row">
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">CAD Linework Received/Completed</h3>
+                            <h3 class="panel-title">Missions Created</h3>
                         </div>
                         <div class="panel-body">
                             <div id="bar-5"></div>
@@ -743,14 +812,9 @@
                                             enabled: false
                                         },
                                         series: [{
-                                                name: 'Requested',
-                                                data: [107, 31, 635, 203]
-                                            },
-                                            {
-                                                name: 'Completed',
-                                                data: [107, 31, 635, 203]
-                                            }
-                                        ]
+                                            name: 'Usage',
+                                            data: [107, 31, 635, 203]
+                                        }]
 
                                     });
 
@@ -795,11 +859,60 @@
                                             enabled: false
                                         },
                                         series: [{
-                                                name: 'Requested',
+                                            name: 'Usage',
+                                            data: [107, 31, 635, 203]
+                                        }]
+
+                                    });
+
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Tickets Raised/Solved</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="bar-7"></div>
+                            <script>
+                                $(document).ready(function () {
+
+                                    Highcharts.chart('bar-7', {
+
+                                        chart: {
+                                            type: 'bar'
+                                        },
+                                        title: {
+                                            text: null
+                                        },
+                                        xAxis: {
+                                            categories: ['August 2016', 'September 2016',
+                                                'November 2016', 'December 2016'
+                                            ],
+                                            title: {
+                                                text: null
+                                            }
+                                        },
+                                        yAxis: {
+                                            min: 0,
+                                            labels: {
+                                                overflow: 'justify'
+                                            }
+                                        },
+                                        credits: {
+                                            enabled: false
+                                        },
+                                        series: [{
+                                                name: 'Raised',
                                                 data: [107, 31, 635, 203]
                                             },
                                             {
-                                                name: 'Completed',
+                                                name: 'Solved',
                                                 data: [107, 31, 635, 203]
                                             }
                                         ]
@@ -811,87 +924,72 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--<div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Total Amount Spent</h3>
+                            <h3 class="panel-title">CAD Linework Received/Completed</h3>
                         </div>
                         <div class="panel-body">
-
-                            <div id="bar-5"></div>
+                            <div id="bar-8"></div>
                             <script>
                                 $(document).ready(function () {
 
-                                    Highcharts.chart('bar-5', {
+                                    Highcharts.chart('bar-8', {
 
                                         chart: {
-                                            type: 'pie'
+                                            type: 'bar'
                                         },
                                         title: {
                                             text: null
                                         },
-                                        credits: {
-                                            enabled: false
+                                        xAxis: {
+                                            categories: ['August 2016', 'September 2016',
+                                                'November 2016', 'December 2016'
+                                            ],
+                                            title: {
+                                                text: null
+                                            }
                                         },
-                                        series: [{
-                                            data: [{
-                                                name: 'Drone',
-                                                y: 56.33
-                                            }, {
-                                                name: 'CAD Linework',
-                                                y: 24.03
-                                            }, {
-                                                name: 'DFM',
-                                                y: 10.38
-                                            }]
-                                        }]
-
-                                    });
-
-                                });
-                            </script>
-
-                            <div id="bar-6"></div>
-                            <script>
-                                $(document).ready(function () {
-
-                                    Highcharts.chart('bar-6', {
-
-                                        chart: {
-                                            type: 'pie'
-                                        },
-                                        title: {>
-                                            text: null
+                                        yAxis: {
+                                            min: 0,
+                                            labels: {
+                                                overflow: 'justify'
+                                            }
                                         },
                                         credits: {
                                             enabled: false
                                         },
                                         series: [{
-                                            data: [{
-                                                name: 'Total CAD Request',
-                                                y: 56.33
-                                            }, {
-                                                name: 'Pending CAD Request',
-                                                y: 24.03
-                                            }, {
-                                                name: 'Total Missions Created',
-                                                y: 10.38
-                                            }]
-                                        }]
+                                                name: 'Received',
+                                                data: [107, 31, 635, 203]
+                                            },
+                                            {
+                                                name: 'Completed',
+                                                data: [107, 31, 635, 203]
+                                            }
+                                        ],
+                                        exporting: {
+                                            buttons: {
+                                                contextButtons: {
+                                                    enabled: false,
+                                                    menuItems: null
+                                                }
+                                            },
+                                            enabled: false
+                                        }
 
                                     });
 
                                 });
                             </script>
-
                         </div>
                     </div>
                 </div>
-            </div>-->
-            </footer>
+            </div>
         </div>
+       
+        </footer>
+    </div>
     </div>
     <!-- End: Footer Sticked Chat -->
     </div>

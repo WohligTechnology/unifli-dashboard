@@ -127,12 +127,29 @@ td {
     border: none;
     color: white;
 }
-
+.highcharts-background{
+    width: 915px;
+    
+}
+.high-chart{
+margin-top: 30px;
+}
+.highcharts-title{
+    display: none;
+}
 .chat-box {
     max-height: 300px;
     overflow: auto;
 }
-
+/*.highcharts-axis{
+    display: none;
+}*/
+.highcharts-credits{
+    display: none;
+}
+.hide-y .highcharts-yaxis{
+display: none;
+}
 .chat-box li {
     padding: 5px 10px;
     text-align: left;
@@ -201,4 +218,9 @@ td {
 }
 .modal-footer {
     border-top: none; 
+}
+
+/* HIGHCHARTS CSS */
+.highcharts-container .highcharts-root .highcharts-button {
+    display: none !important;
 }

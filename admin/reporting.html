@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Xenon Boostrap Admin Panel" />
     <meta name="author" content="" />
-    <title>Unifli - Dashboard</title>
+    <title>Unifli - Reporting</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="../assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
@@ -145,19 +145,19 @@
                         <a href="#" class="user-profile">
                             <img src="http://themes.laborator.co/xenon/assets/images/user-4.png" width="60" height="60" class="img-circle img-corona"
                                 alt="user-pic">
-                                <span> <strong>John Smith</strong>Page admin</span> </a>
+                            <span> <strong>John Smith</strong>Page admin</span> </a>
                     </div>
                 </section>
-                    <ul id="main-menu" class="main-menu">
+                <ul id="main-menu" class="main-menu">
                     <!-- add class "multiple-expanded" to allow multiple submenus to open -->
                     <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
-                   <li class=" has">
+                    <li class=" has">
                         <a href="dashboard.html">
                             <i class="linecons-cog"></i>
                             <span class="title">Dashboard</span>
                         </a>
                     </li>
-					<li class="  has">
+                    <li class="  has">
                         <a href="missions.html">
                             <i class="fa-globe"></i>
                             <span class="title">Missions</span>
@@ -175,31 +175,30 @@
                             <span class="title">CAD Linework Application</span>
                         </a>
                     </li>
-                        <a href="drone-sale.html">
-                            <i class="fa-binoculars"></i>
-                            <span class="title">DRONE Sale Application</span>
-                        </a>
+                    <a href="drone-sale.html">
+                        <i class="fa-binoculars"></i>
+                        <span class="title">DRONE Sale Application</span>
+                    </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
                         <a href="dfm-subscription.html">
                             <i class=" fa-caret-square-o-up"></i>
                             <span class="title">DFM Subscriptions</span>
                         </a>
                     </li>
-                    
-                     <li class="active has">
+                    <li class="active has">
                         <a href="reporting.html">
                             <i class=" fa-bug"></i>
                             <span class="title">Reporting</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
                         <a href="billing.html">
                             <i class="fa-dot-circle-o"></i>
                             <span class="title">Billing</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
                         <a href="setting.html">
                             <i class=" fa fa-sliders"></i>
                             <span class="title">Settings</span>
@@ -211,14 +210,13 @@
                             <span class="title">Support Tickets</span>
                         </a>
                     </li>
-                     <li class=" has">
+                    <li class=" has">
                         <a href="vender.html">
                             <i class="fa-slideshare"></i>
                             <span class="title">Vendor
                              Management</span>
                         </a>
                     </li>
-                    
                 </ul>
             </div>
         </div>
@@ -456,14 +454,11 @@
                                     <i class="fa-user"></i> Profile
                                 </a>
                             </li>
-
                             <li class="">
                                 <a href="account.html">
                                     <i class="fa-credit-card"></i> Account
                                 </a>
                             </li>
-
-
                             <li class="last">
                                 <a href="#">
                                     <i class="fa-lock"></i> Logout
@@ -473,42 +468,31 @@
                     </li>
                 </ul>
             </nav>
-             <div class="page-title">
+            <div class="page-title">
                 <div class="title-env">
                     <h1 class="title">Reporting</h1>
                 </div>
             </div>
-   <div class="row">
+            <div class="row">
                 <div class="col-md-12">
-                   
-                       
-                            <div class="row">
-                                <!--<div class="col-md-8">
+                    <div class="row">
+                        <!--<div class="col-md-8">
                                 <div class="form-group  ">
                                     <h4 for="expenses">Total Expenses : $25,21,545</h4>
 								</div>
                                 </div>-->
-                               
-                                 <div class="col-md-4  pull-right">
-                                   	<div class="form-group">			
-										<select class="form-control">
+                        <div class="col-md-4  pull-right">
+                            <div class="form-group">
+                                <select class="form-control">
                                             <option>Download as</option>
 											<option>xl</option>
 											<option>csv</option>
 										</select>
-									</div>
-								</div>
-                                    
-                            
+                            </div>
                         </div>
+                    </div>
                 </div>
-           </div>
-
-
-
-
-
-
+            </div>
             <div class="row">
                 <div class="col-sm-3">
                     <div class="xe-widget xe-counter">
@@ -564,27 +548,154 @@
                     <div class="xe-widget xe-counter">
                         <div class="xe-label text-center">
                             <!--<strong class="num">21</strong>-->
-                            <span>CAD Linework Complete vs
-CAD Linework Pending - PIE</span>
+                            <span>CAD Linework Complete vs CAD Linework Pending - PIE</span>
                         </div>
                     </div>
                 </div>
             </div>
-        
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div id="container"></div>
+                    <script>
+           
+    //                     Highcharts.chart('container', {
+    //                         xAxis: {
+    //                                tickInterval: 1
+    //                         },
+    //                         yAxis: {
+    //                             min: 0
+    //                         },
+    //                         title: {
+    //                             text: 'Scatter plot with regression line'
+    //                         },
+    //                         series: [{
+    //                             type: 'line',
+    //                             name: 'Regression Line',
+    //                             data: [[0, 0], [30, 25]],
+    //                             marker: {
+    //                                 enabled: false
+    //                             },
+    //                             {
+    //     name: 'Rainfall',
+    //     type: 'column',
+    //     yAxis: 1,
+    //     data: [3,5,9,11,17,20.]
+    // },
+    //                             states: {
+    //                                 hover: {
+    //                                     lineWidth: 0
+    //                                 }
+    //                             },
+    //                             enableMouseTracking: false
+    //                         }, {
+    //                             type: 'scatter',
+    //                             name: 'Observations',
+    //                             data: [1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22],
+    //                             marker: {
+    //                                 radius: 4
+    //                             }
+    //                         }]
+    //                     });
+
+                                Highcharts.chart('container', {
+
+                                    
+
+                                   
+                                    xAxis: {
+                                         title: {
+                                                text: 'Days of Month'
+                                            },
+                                          
+
+                                             tickInterval: 1,
+                                             min: 0,
+                                             max:30
+                                          },
+
+                                  yAxis: {
+                                             title: {
+                                                text: 'Cumulative Revenue'
+                                            },
+                                               min: 0
+                                              
+                                          },
+                                    legend: {
+                                        layout: 'vertical',
+                                        align: 'right',
+                                        verticalAlign: 'middle'
+                                    },
+
+                                    plotOptions: {
+                                        series: {
+                                            pointStart: 1,
+                                            
+                                        }
+                                    },
+
+                                    series: [{
+                                        name:  'Drone Sales',
+                                        data: [1,3,6,9,12,15,19,20,22,28,23,29,18,33,28,17,23,29,30,25,27,20,9,12,15,19,20,22,28,23,29]
+                                    }, {
+                                        name: 'CAD Linework',
+                                        data: [1,4,6,28,23,29,18,33,28,17,23,29,30,20,25,28,30,13,15,12,19,25,20,9,12,15,19,20,18,33,28,17]
+                                    }, {
+                                        name: 'DFM Subscriptions',
+                                        data: [3,5,9,12,22,15,19,20,9,12,15,19,20,18,28,23,29,18,33,28,17,23,29,30,20,25,29,30,20,25,28,30]
+                                    }, ]
+
+                                });
 
 
 
 
+                            </script>
+            </div>
+            </div>
+                       <div class="row high-chart">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            
+                            <span>CLOSING THIS MONTH</span>
+                            <strong class="num">$65,000</strong>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-sm-3">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <span>NEW USERS THIS MONTH</span>
+                            <strong class="num">100</strong>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-sm-3">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <span>DFM SUBSCRIBERS THIS
+MONTH</span>
+<strong class="num">$65,000</strong>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-sm-3">
+                    <div class="xe-widget xe-counter">
+                        <div class="xe-label text-center">
+                            <span>CAD LINE WORK
+REQUESTS THIS MONTH</span>
+<strong class="num">100</strong>
+                        </div>
+                    </div>
+                </div>
+                       </div>
 
-         
             <div class="row">
                 <div class="col-sm-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <!--<h3 class="panel-title">Total Amount Spent</h3>-->
                         </div>
                         <div class="panel-body">
-
                             <div id="bar-5"></div>
                             <script>
                                 $(document).ready(function () {
@@ -614,7 +725,6 @@ CAD Linework Pending - PIE</span>
 
                                 });
                             </script>
-
                             <div id="bar-6"></div>
                             <script>
                                 $(document).ready(function () {
@@ -644,7 +754,6 @@ CAD Linework Pending - PIE</span>
 
                                 });
                             </script>
-
                         </div>
                     </div>
                 </div>
