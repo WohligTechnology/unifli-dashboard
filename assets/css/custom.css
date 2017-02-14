@@ -1,4 +1,4 @@
-/**
+  rooo/**
  *
  * Apply your custom CSS here
  *
@@ -129,7 +129,7 @@ td {
 }
 .highcharts-background{
     width: 915px;
-    
+
 }
 .high-chart{
 margin-top: 30px;
@@ -217,10 +217,80 @@ display: none;
   padding: 15px 15px 0;
 }
 .modal-footer {
-    border-top: none; 
+    border-top: none;
 }
 
 /* HIGHCHARTS CSS */
 .highcharts-container .highcharts-root .highcharts-button {
     display: none !important;
+}
+.create-p{
+  padding: 20px;
+  font-size: 12px;
+}
+.nopad{
+  padding: 0;
+}
+.mb10{
+  margin-bottom:20px;
+}
+.upload{
+  background-color: #014c7e!important;
+  border-right: #014c77!important;
+  display: block;
+}
+.upload:hover{
+  background-color: #014c77!important;
+}
+.misn-btn{
+  background-color: #014c7e!important;
+  display: block;
+  width: 50%;
+}
+
+.misn-btn:hover{
+  background-color: white!important;
+  color: #014c77;
+  border: 1px solid #014c77;
+}
+.misn-btn:hover i{
+  background-color: #014c77!important;
+  color: white;
+}
+.misn-btn+.misn-btn{
+  margin-left: 0;
+}
+.misn-div{
+  margin: 20px 0;
+}
+.misn-img{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+
+}
+.misn-img img{
+  width: 100%;
+  height: 100%;
+}
+.misn-p{
+  display: inline-block;
+}
+.rw-misn{
+  margin: 10px;
+}
+.rw-misn .row .col-sm-6{
+  padding-bottom: 10px;
+  min-height: 150px;
+  border-bottom: 1px solid grey;
+
+}
+.fs14{
+  font-size: 14px;
+}
+.btn-sm{
+  padding: 0;
+}
+.btn-sm a{
+  font-size: 10px
 }

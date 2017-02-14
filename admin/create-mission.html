@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Xenon Boostrap Admin Panel" />
     <meta name="author" content="" />
-    <title>Unifli - Account</title>
+    <title>Unifli - Create Mission</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="../assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
@@ -470,7 +470,7 @@
             </nav>
             <div class="page-title">
                 <div class="title-env">
-                    <h1 class="title">Account</h1>
+                    <h1 class="title">Create Mission</h1>
                 </div>
             </div>
             <!-- Responsive Table -->
@@ -478,93 +478,33 @@
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-body scroll-x">
-                            <!--<div class="member-form-add-header">
-        							<div class="row">
-        								<div class="col-md-2 col-sm-4 pull-right-sm">
+                          <div class="">
+                            <h4 for="">Create Mission</h4>
+                            <p class="bg-muted create-p">
+                              Select all mission files at once <br>
+                              DDMS currently requires images to be geotagged or that you include a .tlog or CSV file with location data.<br>
+                              Please, do not reload this page during upload. If your upload is interrupted, return to the mission page and select all original mission files. Files will be reuploaded, but duplicates will automatically be skipped.<br>
+                            </p>
+                          </div>
+                          <div class="mt10">
+                            <h5 for="">Description</h5>
+                            <div class="col-sm-12 nopad mb10">
+          										<textarea class="form-control" cols="5" id="description"></textarea>
+          									</div>
 
-        									<div class="action-buttons">
-        										<button type="submit" class="btn btn-block btn-secondary">Save Changes</button>
-        										<button type="reset" class="btn btn-block btn-gray">Reset to Default</button>
-        									</div>
+                          </div>
+                          <div class=" mt10">
+                              <h5 for="">Upload</h5>
+            									<div class="col-sm-12 nopad mb10">
+            										<input type="file" class="form-control" id="Upload">
+            									</div>
+                          </div>
+                          <a href="mission-analyze.html"><button class="btn btn-danger mb10 upload">Upload, <b>and process mosaic</b> </button></a>
 
-        								</div>
-        								<div class="col-md-10 col-sm-8">
 
-        									<div class="user-img">
-        										<img src="../assets/images/user-2.png" class="img-circle" alt="user-pic" />
-        									</div>
-        									<div class="user-name">
-        										<a href="#">Jack Gates</a>
-        										<span>Administrator</span>
-        									</div>
 
-        								</div>
-        							</div>
-        						</div>-->
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h4>Card Details</h4>
-                                    <div class="account">
-                                        <div class="form-group">
-                                            <label class="control-label">Card Type:</label>
-                                            <select class="form-control" id="sboxit-1">
-                                  <option>Master-card</option>
-            											<option>visa</option>
-              									</select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="CardNumber">Card Number:</label>
-                                            <input type="number" class="form-control" id="CardNumber" placeholder="Card Number">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="Code">Security Code:</label>
-                                            <input type="number" class="form-control" id="Code" placeholder="Security Code">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name">Name on card:</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Name on card">
-                                        </div>
-                                        <!--<div class="form-group">
-                									<button type="button" class="btn btn-info create btn-single">Submit</button>
-<<<<<<< HEAD
-                								</div>-->
-                                        <div class="form-group">
-                                            <button type="button" class="btn btn-info btn-single create">Submit</button>
-                                            <button type="button" class="btn btn-info btn-single pull-right create">Add Card</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h4>DFM Stats</h4>
-                                    <table class="table table-bordered table-striped account">
-                                        <tbody>
-                                            <tr>
-                                                <td>Status</td>
-                                                <td>Active</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Usage</td>
-                                                <td>43 days left</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Current Plan</td>
-                                                <td>Standard</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Auto Renewal</td>
-                                                <td>
-                                                    <select class="form-control">
-  											<option>Yes</option>
-  											<option>No</option>
-                      </select></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!--<button type="button" class="btn btn-info btn-single create">SAVE CHANGES</button>-->
-                                    <button type="button" class="btn btn-info btn-single create">Save Changes</button>
-                                    <a href="plans.html"><button type="button" class="btn btn-info btn-single pull-right create">Change Plan</button></a>
-                                </div>
-                            </div>
+
+
                         </div>
                     </div>
                     </form>
