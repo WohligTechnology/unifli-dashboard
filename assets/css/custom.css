@@ -245,7 +245,7 @@ display: none;
 .misn-btn{
   background-color: #014c7e!important;
   display: block;
-  width: 50%;
+  width: 100%;
 }
 
 .misn-btn:hover{
@@ -279,9 +279,9 @@ display: none;
 .rw-misn{
   margin: 10px;
 }
-.rw-misn .row .col-sm-6{
-  padding-bottom: 10px;
-  min-height: 150px;
+.rw-misn {
+  padding-bottom: 20px;
+  min-height: auto;
   border-bottom: 1px solid grey;
 
 }
@@ -294,3 +294,31 @@ display: none;
 .btn-sm a{
   font-size: 10px
 }
+.ready-btn {
+    background-color: grey;
+    color:limegreen;
+    border-radius: 10px 10px 10px 10px;
+        padding: 0px 10px;
+}
+.sharing{
+    border: none;
+    width: auto;
+    background: none;
+}
+.sharing:hover{
+border: none;
+background: none;
+}
+.apply-btn{
+    color: #8dc63f;
+    border-color: #8dc63f;
+}
+.img-map{
+        height: 220px;
+    padding: 20px;
+  
+}
+ .map-img {
+        height: 100%;
+        width:100%;
+    }
