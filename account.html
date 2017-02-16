@@ -507,11 +507,12 @@
                                         </div>
                                         <!--<div class="form-group">
                 									<button type="button" class="btn btn-info create btn-single">Submit</button>
-<<<<<<< HEAD
+
                 								</div>-->
                                         <div class="form-group">
                                             <button type="button" class="btn btn-info btn-single create">Submit</button>
-                                            <button type="button" class="btn btn-info btn-single pull-right create">Add Card</button>
+                                            <button type="button" class="btn btn-info btn-single pull-right create" href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});">Add Card</button>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -550,6 +551,63 @@
                     </div>
                     </form>
                 </div>
+
+                        <div class="modal fade custom-width" id="modal-6">
+                            <div class="modal-dialog" style="width: 40%;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Add Card</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="col-md-12">
+                                    <h4>Card Details</h4>
+                                    <div class="account">
+                                        <div class="form-group">
+                                            <label class="control-label">Card Type:</label>
+                                            <select class="form-control" id="sboxit-1">
+                                  <option>Master-card</option>
+            											<option>visa</option>
+              									</select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="CardNumber">Card Number:</label>
+                                            <input type="number" class="form-control" id="CardNumber" placeholder="Card Number">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Code">Security Code:</label>
+                                            <input type="number" class="form-control" id="Code" placeholder="Security Code">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Name on card:</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Name on card">
+                                        </div>
+                                        <!--<div class="form-group">
+                									<button type="button" class="btn btn-info create btn-single">Submit</button>
+
+                								</div>-->
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-info btn-single create">Submit</button>
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="row">
+                                           
+                                            <div class="col-md-12">
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                 <script type="text/javascript">
                             // This JavaScript Will Replace Checkboxes in dropdown toggles
                             jQuery(document).ready(function($) {
