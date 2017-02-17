@@ -480,7 +480,7 @@
             										<input type="file" class="form-control" id="Upload">
             									</div>
                           </div>
-                          <a href="mission-analyze.html"><button class="btn btn-danger mb10 upload">Upload, <b>and process mosaic</b> </button></a>
+                          <a href="javascript:;" onclick="jQuery('#modal-4').modal('show', {backdrop: 'static'});"   class="" ><button class="btn btn-danger mb10 upload">Upload, <b>and process mosaic</b> </button></a>
 
 
 
@@ -489,6 +489,90 @@
                         </div>
                     </div>
                     </form>
+                </div>
+                <div class="modal fade" id="modal-4" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Uploaded Files</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="row">
+                                              <div class="col-md-8">
+                                                <label>Files</label>
+                                              </div>
+                                              <div class="col-md-4">
+                                                  <label>Status</label>
+                                                    <!-- <button class="btn btn-default">retry</button> -->
+                                              </div>
+
+
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-md-8">
+                                                <p class="bg-muted file-p">
+                                                abc.jpg
+                                                </p>
+                                              </div>
+                                              <div class="col-md-4">
+                                                <label for="">succes</label>
+                                                <!-- <button class="btn btn-default">retry</button> -->
+                                              </div>
+
+
+                                            </div>
+                                               <div class="row">
+                                                    <div class="col-md-8">
+                                                      <p class="bg-muted file-p">
+                                                      abc.jpg
+                                                      </p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <label for="">succes</label>
+                                                      <!-- <button class="btn btn-default">retry</button> -->
+                                                    </div>
+
+
+                                                  </div>
+                                            <div class="row">
+                                              <div class="col-md-8">
+                                                <p class="bg-muted file-p">
+                                                abc.jpg
+                                                </p>
+                                              </div>
+                                              <div class="col-md-4">
+                                                <button class="btn btn-default retry">failed/retry</button>
+                                              </div>
+
+
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-md-8">
+                                                <p class="bg-muted file-p">
+                                                abc.jpg
+                                                </p>
+                                              </div>
+                                              <div class="col-md-4">
+                                                <label for="">succes</label>
+                                                <!-- <button class="btn btn-default">retry</button> -->
+                                              </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                  <a href="mission-analyze.html" class="id-underline"><button type="button" class="btn btn-info" > Proceed</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <script type="text/javascript">
                             // This JavaScript Will Replace Checkboxes in dropdown toggles
